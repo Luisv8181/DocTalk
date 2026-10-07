@@ -1,0 +1,28 @@
+# DocTalk resource metadata schema
+# Initial schema. Individual resources will be added after verification.
+
+schema_version: "0.1"
+
+fields:
+  name: required
+  audience: required
+  type: required
+  topics: required
+  scope: recommended
+  region: recommended
+  cost: recommended
+  access: required
+  evidence_level: recommended
+  evidence_basis: recommended
+  privacy: recommended
+  confidentiality: recommended
+  clinical_use: recommended
+  emergency_resource: recommended
+  language_access: recommended
+  last_reviewed: required
+  source_organization: required
+  official_url: required
+  description: required
+  limitations: recommended
+
+resources: []
