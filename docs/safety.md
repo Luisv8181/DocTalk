@@ -1,27 +1,33 @@
-# DocTalk Safety Boundaries
+# DocTalk Safety and Trust
 
-DocTalk is an informational resource center. It is not a diagnostic, treatment, emergency-response, or clinician-monitoring service.
+## Purpose
+DocTalk is an information and resource discovery project. It is not a healthcare provider.
 
-## Crisis resources
+## Emergency content
+Emergency and crisis resources should be visually prominent and easy to access. Verify contact details before publication and on a regular review cycle.
 
-Emergency and crisis pathways should be highly visible and regularly reviewed.
+## No diagnosis
+Do not build flows that label someone with depression, anxiety, burnout, suicide risk, substance-use disorder, or another condition.
 
-## Privacy
+## No personal data by default
+Core browsing should work without accounts or sensitive information. Avoid collecting free-text disclosures about mental health.
 
-The public resource center should not require users to disclose diagnoses, treatment histories, identities, or other sensitive information.
+## AI boundary
+An eventual AI navigator should:
+- retrieve only from approved catalog content
+- show the source and last-review date
+- state uncertainty
+- distinguish informational resources from clinical care
+- escalate emergency information clearly
+- refuse to fabricate providers or programs
 
-## Clinical boundaries
+It should not:
+- diagnose
+- prescribe
+- replace clinicians
+- make hidden risk assessments
+- claim confidentiality without evidence
+- make licensing/credentialing claims without jurisdiction-specific sourcing
 
-Resource entries should not imply that DocTalk has evaluated an individual user or determined what treatment they need.
-
-## AI boundaries
-
-A future intelligent navigator should retrieve from the curated resource database, preserve source provenance, and avoid inventing resources.
-
-## Content moderation
-
-Do not promote unsupported miracle cures, stigmatizing language, coercive help-seeking, or unsafe clinical claims.
-
-## Inclusion
-
-Resource inclusion does not equal endorsement. Users should be able to see the source organization, description, limitations, cost/access information, and review date.
+## Trust model
+Every resource must have provenance. Stale, unverifiable, misleading, or unsafe entries should be corrected or archived.
