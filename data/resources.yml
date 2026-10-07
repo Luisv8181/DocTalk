@@ -140,3 +140,117 @@ resources:
     official_url: "https://www.ihi.org/"
     description: "Organizational resource addressing psychological support and workforce wellbeing."
     limitations: "Verify current title, URL, and applicability before publication."
+  - id: nami-health-care-professionals-peer-support
+    name: "NAMI Peer Support Resources for Health Care Professionals"
+    audience: [medical-student, resident, physician, mental-health-professional]
+    type: peer-support
+    topics: [peer-support, mental-health, physician-wellbeing, help-seeking]
+    scope: national
+    region: [US]
+    cost: free
+    access: [public-web]
+    evidence_level: professional-guidance
+    evidence_basis: "NAMI maintains a health-care-professional peer-support resource collection."
+    privacy: "Review individual linked programs for their own terms."
+    confidentiality: "Varies by linked program; verify."
+    clinical_use: false
+    emergency_resource: false
+    language_access: "Varies."
+    last_reviewed: "2026-10-07"
+    review_status: verified-source-pending-entry-review
+    source_organization: "National Alliance on Mental Illness"
+    official_url: "https://www.nami.org/frontline-professionals/health-care-professionals/peer-support-resources/"
+    description: "Curated peer-support pathways and organizations relevant to health care professionals."
+    limitations: "The collection contains multiple external programs with different eligibility and operating details."
+
+  - id: fsphp-physician-suicide-prevention-resources
+    name: "FSPHP Physician Suicide Prevention Resources"
+    audience: [medical-student, resident, physician, educator]
+    type: toolkit
+    topics: [suicide-prevention, physician-wellbeing, crisis-support, help-seeking]
+    scope: national
+    region: [US]
+    cost: free
+    access: [public-web]
+    evidence_level: professional-guidance
+    evidence_basis: "FSPHP-maintained resource page consolidating physician suicide-prevention and support pathways."
+    privacy: "Review each linked service."
+    confidentiality: "Varies by linked service."
+    clinical_use: false
+    emergency_resource: true
+    language_access: "Varies."
+    last_reviewed: "2026-10-07"
+    review_status: verified-source-pending-entry-review
+    source_organization: "Federation of State Physician Health Programs"
+    official_url: "https://www.fsphp.org/physician-suicide-prevention-resources"
+    description: "Centralized physician-focused suicide-prevention resource page including crisis and peer-support options."
+    limitations: "Some linked resources are external and may change independently."
+
+  - id: stanford-wellbeing-toolkit
+    name: "Stanford WellMD & WellPhD Well-Being Tools for Organizations"
+    audience: [physician, resident, fellow, educator, institution]
+    type: toolkit
+    topics: [burnout, professional-fulfillment, organizational-wellbeing, measurement]
+    scope: international
+    region: [global]
+    cost: varies
+    access: [public-web]
+    evidence_level: professional-guidance
+    evidence_basis: "Stanford provides evidence-informed organizational tools and a model of occupational well-being."
+    privacy: "Depends on tool and deployment."
+    confidentiality: "Depends on tool and deployment."
+    clinical_use: false
+    emergency_resource: false
+    language_access: "Verify."
+    last_reviewed: "2026-10-07"
+    review_status: verified-source-pending-entry-review
+    source_organization: "Stanford Medicine WellMD & WellPhD"
+    official_url: "https://wellmd.stanford.edu/wellbeing-toolkit.html"
+    description: "Frameworks and tools for measuring, assessing, and improving occupational well-being."
+    limitations: "Some instruments have specific permission or use conditions."
+
+  - id: stanford-professional-fulfillment-index
+    name: "Stanford Professional Fulfillment Index"
+    audience: [physician, resident, fellow, educator, institution, researcher]
+    type: assessment
+    topics: [burnout, professional-fulfillment, measurement, research]
+    scope: international
+    region: [global]
+    cost: free
+    access: [public-web]
+    evidence_level: controlled-study
+    evidence_basis: "Stanford describes the PFI as a validated instrument used to assess burnout and professional fulfillment."
+    privacy: "Local administration determines data handling."
+    confidentiality: "Depends on administration context."
+    clinical_use: false
+    emergency_resource: false
+    language_access: "Verify."
+    last_reviewed: "2026-10-07"
+    review_status: verified-source-pending-entry-review
+    source_organization: "Stanford Medicine WellMD & WellPhD"
+    official_url: "https://wellmd.stanford.edu/wellbeing-toolkit/professional-fulfillment-index.html"
+    description: "Validated survey instrument for physician well-being measurement, covering burnout and professional fulfillment."
+    limitations: "Permission requirements can differ based on whether the instrument is modified and how it is administered."
+
+  - id: joint-commission-worker-wellbeing-resource-center
+    name: "Joint Commission Workforce Safety & Well-Being Resource Center"
+    audience: [physician, resident, medical-student, educator, institution]
+    type: policy
+    topics: [workforce-wellbeing, burnout, organizational-change, safety]
+    scope: national
+    region: [US]
+    cost: free
+    access: [public-web]
+    evidence_level: professional-guidance
+    evidence_basis: "Joint Commission resource center organizes workforce well-being resources and action steps."
+    privacy: "Not applicable to informational browsing."
+    confidentiality: "Not applicable to informational browsing."
+    clinical_use: false
+    emergency_resource: false
+    language_access: "Verify."
+    last_reviewed: "2026-10-07"
+    review_status: verified-source-pending-entry-review
+    source_organization: "The Joint Commission"
+    official_url: "https://www.jointcommission.org/en-us/knowledge-library/workforce-safety-and-well-being-resource-center/worker-well-being"
+    description: "Organizational workforce well-being resources focused on system-level approaches to burnout and clinician safety."
+    limitations: "Primarily organizational rather than individual treatment support."
