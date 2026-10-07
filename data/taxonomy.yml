@@ -1,0 +1,73 @@
+schema_version: "0.1"
+
+audiences:
+  - medical-student
+  - resident
+  - physician
+  - fellow
+  - educator
+  - mental-health-professional
+  - researcher
+  - institution
+  - general
+
+types:
+  - crisis-support
+  - peer-support
+  - counseling
+  - physician-health-program
+  - curriculum
+  - assessment
+  - toolkit
+  - research
+  - community
+  - digital-tool
+  - policy
+  - education
+  - directory
+
+needs:
+  - immediate-support
+  - someone-to-talk-to
+  - professional-care
+  - self-guided
+  - education
+  - research
+  - institutional-change
+
+topics:
+  - burnout
+  - professional-fulfillment
+  - depression
+  - anxiety
+  - suicide-prevention
+  - crisis-support
+  - sleep
+  - substance-use
+  - trauma
+  - grief
+  - difficult-clinical-experiences
+  - moral-distress
+  - peer-support
+  - help-seeking
+  - cultural-humility
+  - language-access
+  - equity
+  - belonging
+  - mentorship
+  - harassment
+  - discrimination
+  - privacy
+  - artificial-intelligence
+  - clinical-ai-literacy
+
+evidence_levels:
+  - systematic-review-meta-analysis
+  - controlled-study
+  - observational-research
+  - qualitative-evidence
+  - professional-guidance
+  - institutional-resource
+  - community-resource
+  - informational
+  - unknown
