@@ -28,7 +28,7 @@ jobs:
           cache: npm
 
       - name: Install build dependencies
-        run: npm ci
+        run: npm install
 
       - name: Build canonical resource catalog
         run: npm run build
