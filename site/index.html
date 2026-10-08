@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DocTalk: an open resource center for mental health and wellbeing in medicine.">
+  <title>DocTalk | Mental Health Resources for Medicine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="shell">
+      <p class="eyebrow">DOCTALK</p>
+      <h1>Mental health resources for the people who practice medicine.</h1>
+      <p class="lede">A curated, open discovery layer for medical students, residents, physicians, educators, and mental-health professionals.</p>
+      <div class="notice"><strong>In immediate danger or crisis?</strong> Use an appropriate emergency or crisis service. DocTalk is a resource navigator, not a crisis-triage or treatment service.</div>
+    </div>
+  </header>
+  <main class="shell">
+    <section class="intro">
+      <h2>Find the right door.</h2>
+      <p>Start with who you are and what you need. DocTalk is designed to make a fragmented resource landscape easier to navigate.</p>
+    </section>
+    <section class="filters" aria-label="Resource filters">
+      <label>Audience
+        <select id="audience"><option value="">Everyone</option></select>
+      </label>
+      <label>Topic
+        <select id="topic"><option value="">All topics</option></select>
+      </label>
+      <label>Type
+        <select id="type"><option value="">All types</option></select>
+      </label>
+      <label>Search
+        <input id="search" type="search" placeholder="Search resources">
+      </label>
+    </section>
+    <section aria-live="polite">
+      <p id="count" class="count"></p>
+      <div id="resources" class="grid"></div>
+    </section>
+  </main>
+  <footer class="shell footer">
+    <p>DocTalk is an informational discovery project. Inclusion does not equal endorsement.</p>
+    <p><a href="https://github.com/Luisv8181/DocTalk">GitHub</a></p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
