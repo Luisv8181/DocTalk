@@ -254,3 +254,49 @@ resources:
     official_url: "https://www.jointcommission.org/en-us/knowledge-library/workforce-safety-and-well-being-resource-center/worker-well-being"
     description: "Organizational workforce well-being resources focused on system-level approaches to burnout and clinician safety."
     limitations: "Primarily organizational rather than individual treatment support."
+
+  - id: nami-helpline
+    name: "NAMI HelpLine"
+    audience: [general, medical-student, resident, physician, mental-health-professional]
+    type: peer-support
+    topics: [mental-health, help-seeking, peer-support, crisis-support]
+    scope: national
+    region: [US]
+    cost: free
+    access: [phone, text, email, public-web]
+    evidence_level: institutional-resource
+    evidence_basis: "NAMI describes the HelpLine as a nationwide service providing emotional support, mental-health information, and resource referral."
+    privacy: "NAMI states that it does not ask callers for identifying information, while noting that phone/text contact exposes the user's phone number."
+    confidentiality: "Review current HelpLine terms before publication; the service is not a crisis hotline or professional mental-health service."
+    clinical_use: false
+    emergency_resource: false
+    language_access: "English and Spanish support are documented; verify current availability."
+    last_reviewed: "2026-10-07"
+    review_status: verified-source-pending-entry-review
+    source_organization: "National Alliance on Mental Illness"
+    official_url: "https://www.nami.org/nami-helpline/"
+    description: "Free nationwide mental-health information, resource referral, and peer-support service."
+    limitations: "Not a crisis or suicide hotline and not a substitute for diagnosis, treatment, or a therapist-client relationship."
+
+  - id: ama-steps-forward
+    name: "AMA STEPS Forward"
+    audience: [physician, resident, fellow, educator, institution, researcher]
+    type: toolkit
+    topics: [burnout, professional-fulfillment, workforce-wellbeing, organizational-change, artificial-intelligence]
+    scope: national
+    region: [US]
+    cost: free
+    access: [public-web]
+    evidence_level: professional-guidance
+    evidence_basis: "AMA STEPS Forward provides physician-developed practice resources addressing physician well-being, workflow, burnout, and organizational change."
+    privacy: "Not applicable to informational browsing."
+    confidentiality: "Not applicable to informational browsing."
+    clinical_use: false
+    emergency_resource: false
+    language_access: "Verify."
+    last_reviewed: "2026-10-07"
+    review_status: verified-source-pending-entry-review
+    source_organization: "American Medical Association"
+    official_url: "https://www.ama-assn.org/practice-management/ama-steps-forward-program"
+    description: "Open-access physician well-being and practice-improvement resources, including tools for burnout, workflow, organizational well-being, and technology."
+    limitations: "Resources vary in intended audience, evidence basis, and implementation context."
