@@ -1,7 +1,9 @@
 # DocTalk Site
 
-This directory is the first static prototype for DocTalk's GitHub Pages experience.
+The canonical resource catalog is data/resources.yml.
 
-It is intentionally dependency-free while the resource model and catalog are being established.
+During the GitHub Pages build, scripts/build-site.mjs converts that YAML into site/generated/resources.json. The browser reads the generated catalog. Do not maintain a second hand-written resource dataset in the site.
 
-The current prototype uses a small inline dataset. Before production deployment, generate the site's data from `data/resources.yml` so the repository has one canonical source of truth.
+The site is dependency-light. Build dependencies are used only during deployment to transform the canonical YAML catalog into browser-readable JSON.
+
+GitHub Pages deployment is handled by .github/workflows/pages.yml.
