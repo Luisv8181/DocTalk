@@ -1,0 +1,7 @@
+{
+  "name": "doctalk-site-build",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "node scripts/build-site.mjs" },
+  "dependencies": { "yaml": "^2.8.1" }
+}
