@@ -82,18 +82,18 @@ resources:
     cost: free
     access: [public-web]
     evidence_level: professional-guidance
-    evidence_basis: "Professional medical-education organization resource; verify exact current page and contents."
+    evidence_basis: "Professional medical-education organization resource: curated well-being article collection on the AAMC Students & Residents site; not an evaluated intervention."
     privacy: "Not applicable to informational browsing."
     confidentiality: "Not applicable to informational browsing."
     clinical_use: false
     emergency_resource: false
-    language_access: "Verify."
-    last_reviewed: "2026-10-07"
-    review_status: pending_verification
+    language_access: "English (site content); other languages not documented."
+    last_reviewed: "2026-10-10"
+    review_status: verified-entry
     source_organization: "Association of American Medical Colleges"
-    official_url: "https://www.aamc.org/"
-    description: "AAMC is a key source for medical education and learner wellbeing guidance."
-    limitations: "This record is an architecture placeholder until the specific current AAMC resource page is verified."
+    official_url: "https://students-residents.aamc.org/attending-medical-school/medical-student-mental-health-and-well-being"
+    description: "AAMC curated hub of medical student mental-health and well-being resources: articles and stories from student service providers, faculty, staff, and current medical students covering resilience, stress management, finances, healthy living, purpose, relationships, and navigating care for mental health."
+    limitations: "Informational resource collection; not a crisis service and not a substitute for care. Page links to articles on navigating care for mental health."
 
   - id: acgme-well-being
     name: "ACGME Well-Being Resources"
