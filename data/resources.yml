@@ -359,16 +359,16 @@ resources:
     evidence_level: community-resource
     evidence_basis: "501(c)(3) nonprofit network; program pages describe pro-bono or reduced-fee therapy matching for health care workers."
     privacy: "Platform-level privacy terms not documented in sources checked."
-    confidentiality: "Therapy occurs under the therapist-client relationship; platform-level confidentiality terms not documented in sources checked."
+    confidentiality: "Therapy occurred under the therapist-client relationship while active; platform-level confidentiality terms not documented in sources checked."
     clinical_use: true
     emergency_resource: false
     language_access: "English (site content); other languages not documented."
-    last_reviewed: "2026-10-09"
+    last_reviewed: "2026-10-10"
     review_status: pending_verification
     source_organization: "Therapy Aid Coalition"
-    official_url: "http://therapyaid.org/register"
-    description: "Nonprofit network connecting US health care professionals and first responders with licensed therapists for pro-bono or reduced-fee (up to $100/session) therapy, in person or online."
-    limitations: "Blocked from promotion: site homepage does not resolve and some official pages carry 2020 dates. Confirm current operating status and privacy terms before publication; availability depends on the volunteer therapist network and location."
+    official_url: "https://www.therapyaid.org/"
+    description: "Former nonprofit network that connected US health care professionals and first responders with licensed therapists for pro-bono or reduced-fee therapy. The program has closed: the official site now carries a sunset announcement ('Therapy Aid is Sunsetting... We have closed our doors', verified 2026-10-10) and directs visitors to other organizations' resource pages."
+    limitations: "SUNSET/DISCONTINUED: therapy matching is no longer operating (official homepage announcement verified 2026-10-10). A stale volunteer-signup page still renders at the old /register path, and the Find a Therapist page states the directory is paused, referring to emotionalppe.org and openpathcollective.org (not independently verified here). Not publishable as an active resource; candidate for archival or a discontinued-marker if the schema gains one."
 
   - id: vital-worklife
     name: "VITAL WorkLife"
