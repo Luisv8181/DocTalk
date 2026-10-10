@@ -65,8 +65,8 @@ resources:
     clinical_use: true
     emergency_resource: false
     language_access: "Varies."
-    last_reviewed: "2026-10-07"
-    review_status: pending_verification
+    last_reviewed: "2026-10-10"
+    review_status: verified-entry
     source_organization: "Federation of State Physician Health Programs"
     official_url: "https://www.fsphp.org/"
     description: "Directory and federation information for state physician health programs."
