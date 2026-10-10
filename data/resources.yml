@@ -13,18 +13,18 @@ resources:
     cost: free
     access: [phone, text, chat, public-web]
     evidence_level: institutional-resource
-    evidence_basis: "Government-supported crisis service; verify current operating details before publication."
-    privacy: "Review current privacy terms before publication."
-    confidentiality: "Do not infer confidentiality beyond published source language."
+    evidence_basis: "Operated under a cooperative agreement with SAMHSA (U.S. Department of Health and Human Services). 15-point checklist verification completed against 988lifeline.org and its Terms of Service on 2026-10-09. Evidence level describes the service as a resource, not clinical efficacy."
+    privacy: "No personally identifiable information required to receive support. Terms of Service: contact information is not shared outside the 988 Lifeline without consent, except imminent-risk exceptions (imminent physical harm, suicide attempt or overdose in progress, medical emergency, abuse/neglect, threats to a contact center), in which PII may be disclosed to 911/law enforcement/mobile crisis."
+    confidentiality: "Homepage states conversations are 'free and confidential'. Terms of Service: 'You have the right to expect that information about your contact with the 988 Lifeline will not be shared outside the 988 Lifeline without your consent', subject to the imminent-risk exceptions noted under privacy."
     clinical_use: false
     emergency_resource: true
-    language_access: "Verify current language options."
-    last_reviewed: "2026-10-07"
-    review_status: pending_verification
+    language_access: "Interpretation services provided at no cost for people whose primary language is not English; Deaf/HoH resources and ASL videophone available."
+    last_reviewed: "2026-10-09"
+    review_status: verified-entry
     source_organization: "988 Suicide & Crisis Lifeline"
     official_url: "https://988lifeline.org/"
-    description: "National crisis-support entry point for people experiencing suicidal, mental-health, or substance-use crisis."
-    limitations: "Not a replacement for emergency medical services or ongoing clinical care."
+    description: "National crisis-support entry point for people experiencing suicidal, mental-health, or substance-use crisis. Available 24/7/365: call or text 988, web chat (chat.988lifeline.org), or ASL videophone."
+    limitations: "Not a medical provider or a substitute for emergency medical services or ongoing clinical care; call 911 first for an immediate physical safety threat. SAMHSA and the network administrator charge no fee, but carrier phone-plan charges, emergency-dispatch costs, and outside-referral costs may apply."
 
   - id: physician-support-line
     name: "Physician Support Line"
