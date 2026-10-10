@@ -357,7 +357,7 @@ resources:
     cost: varies
     access: [public-web]
     evidence_level: community-resource
-    evidence_basis: "501(c)(3) nonprofit network; program pages describe pro-bono or reduced-fee therapy matching for health care workers."
+    evidence_basis: "501(c)(3) nonprofit network (EIN 85-0791885, Therapy Aid Coalition Inc, confirmed via ProPublica Nonprofit Explorer sourced to the IRS Exempt Organizations Business Master File extract, checked 2026-10-10); program pages describe pro-bono or reduced-fee therapy matching for health care workers."
     privacy: "Platform-level privacy terms not documented in sources checked."
     confidentiality: "Therapy occurred under the therapist-client relationship while active; platform-level confidentiality terms not documented in sources checked."
     clinical_use: true
@@ -368,7 +368,7 @@ resources:
     source_organization: "Therapy Aid Coalition"
     official_url: "https://www.therapyaid.org/"
     description: "Former nonprofit network that connected US health care professionals and first responders with licensed therapists for pro-bono or reduced-fee therapy. The program has closed: the official site now carries a sunset announcement ('Therapy Aid is Sunsetting... We have closed our doors', verified 2026-10-10) and directs visitors to other organizations' resource pages."
-    limitations: "SUNSET/DISCONTINUED: therapy matching is no longer operating (official homepage announcement verified 2026-10-10). A stale volunteer-signup page still renders at the old /register path, and the Find a Therapist page states the directory is paused, referring to emotionalppe.org and openpathcollective.org (not independently verified here). Not publishable as an active resource; candidate for archival or a discontinued-marker if the schema gains one."
+    limitations: "SUNSET/DISCONTINUED: therapy matching is no longer operating (official homepage sunset announcement re-verified 2026-10-10: 'Therapy Aid is Sunsetting... We have closed our doors'). A stale volunteer-signup page still renders at the old /register path, and the Find a Therapist page states the directory is paused, referring to emotionalppe.org and openpathcollective.org (not independently verified here; subpage fetches failed on the 2026-10-10 re-check, so the stale-page claims carry over from the earlier pass). Kept as pending_verification: every checklist fact verifies, but the program is closed and therefore not publishable as an active resource, and the schema has no discontinued/archival marker."
 
   - id: vital-worklife
     name: "VITAL WorkLife"
