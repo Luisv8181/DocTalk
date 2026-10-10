@@ -300,3 +300,95 @@ resources:
     official_url: "https://www.ama-assn.org/practice-management/ama-steps-forward-program"
     description: "Open-access physician well-being and practice-improvement resources, including tools for burnout, workflow, organizational well-being, and technology."
     limitations: "Resources vary in intended audience, evidence basis, and implementation context."
+
+  - id: peerrxmed
+    name: "PeerRxMed"
+    audience: [physician, resident, fellow]
+    type: digital-tool
+    topics: [physician-wellbeing, peer-support, burnout]
+    scope: national
+    region: [US]
+    cost: free
+    access: [public-web]
+    evidence_level: community-resource
+    evidence_basis: "Peer-led program described by its organizers as a free buddy system for physicians; covered by the AMA as a physician peer-support model."
+    privacy: "Site states newsletter email addresses are never shared with others; the buddy program itself pairs participants with a self-chosen partner and is not presented as anonymous."
+    confidentiality: "Not presented as confidential; peer-to-peer format."
+    clinical_use: false
+    emergency_resource: false
+    language_access: "English (site content); other languages not documented."
+    last_reviewed: "2026-10-09"
+    review_status: verified-source-pending-entry-review
+    source_organization: "PeerRxMed"
+    official_url: "https://www.peerrxmed.com/"
+    description: "Free peer-to-peer program pairing physicians and other health care workers in a buddy system (PRx90) with weekly check-in prompts to support connection and well-being."
+    limitations: "Peer support, not clinical care. Participants choose their own buddy; no professional matching, crisis response, or published outcome data."
+
+  - id: mayo-clinic-well-being-index
+    name: "Mayo Clinic Well-Being Index"
+    audience: [physician, resident, fellow, medical-student]
+    type: digital-tool
+    topics: [burnout, physician-wellbeing, measurement, professional-fulfillment]
+    scope: international
+    region: [global]
+    cost: varies
+    access: [institution-required]
+    evidence_level: controlled-study
+    evidence_basis: "Mayo Clinic describes the Well-Being Index as a validated 9-question instrument with 10+ years of validation research; exclusively licensed to MedEd Web Solutions."
+    privacy: "Vendor states the tool is 100% anonymous by architecture with an anonymity threshold, and individual results are never seen by leadership or HR."
+    confidentiality: "Individual results private; organizations receive aggregate reports only."
+    clinical_use: false
+    emergency_resource: false
+    language_access: "Verify."
+    last_reviewed: "2026-10-09"
+    review_status: verified-source-pending-entry-review
+    source_organization: "Mayo Clinic (licensed to MedEd Web Solutions)"
+    official_url: "https://www.mywellbeingindex.org"
+    description: "Online and mobile self-assessment measuring six dimensions of distress and well-being in nine questions, with role-specific versions for physicians, residents, fellows, and medical students."
+    limitations: "Organizational product: individual access requires a participating employer or institution. Pricing via vendor contact; verify current terms before publication."
+
+  - id: therapy-aid-coalition
+    name: "Therapy Aid Coalition"
+    audience: [physician, resident, fellow, medical-student]
+    type: digital-tool
+    topics: [mental-health, counseling, physician-wellbeing, help-seeking]
+    scope: national
+    region: [US]
+    cost: varies
+    access: [public-web]
+    evidence_level: community-resource
+    evidence_basis: "501(c)(3) nonprofit network; program pages describe pro-bono or reduced-fee therapy matching for health care workers."
+    privacy: "Platform-level privacy terms not documented in sources checked."
+    confidentiality: "Therapy occurs under the therapist-client relationship; platform-level confidentiality terms not documented in sources checked."
+    clinical_use: true
+    emergency_resource: false
+    language_access: "English (site content); other languages not documented."
+    last_reviewed: "2026-10-09"
+    review_status: pending_verification
+    source_organization: "Therapy Aid Coalition"
+    official_url: "http://therapyaid.org/register"
+    description: "Nonprofit network connecting US health care professionals and first responders with licensed therapists for pro-bono or reduced-fee (up to $100/session) therapy, in person or online."
+    limitations: "Blocked from promotion: site homepage does not resolve and some official pages carry 2020 dates. Confirm current operating status and privacy terms before publication; availability depends on the volunteer therapist network and location."
+
+  - id: vital-worklife
+    name: "VITAL WorkLife"
+    audience: [physician, resident, fellow]
+    type: digital-tool
+    topics: [physician-wellbeing, burnout, counseling, peer-support]
+    scope: national
+    region: [US]
+    cost: free
+    access: [membership-required]
+    evidence_level: institutional-resource
+    evidence_basis: "Healthcare-focused employee assistance program; official materials describe the app, assessments, and counseling services."
+    privacy: "Vendor states app and assessment information is strictly confidential, HIPAA-compliant, and never shared; employer does not know who uses the resources."
+    confidentiality: "EAP use described as confidential, with standard legal exceptions such as safety risk."
+    clinical_use: true
+    emergency_resource: false
+    language_access: "Verify."
+    last_reviewed: "2026-10-09"
+    review_status: verified-source-pending-entry-review
+    source_organization: "VITAL WorkLife, Inc."
+    official_url: "https://www.vitalworklife.com/"
+    description: "Healthcare-focused employee assistance program with a mobile app and digital platform offering well-being assessments, counseling access (phone, video, in-person), peer coaching, and 24/7 support."
+    limitations: "Available only through participating employers; free to members (employer-paid). Verify current app and program details before publication."
