@@ -128,18 +128,18 @@ resources:
     cost: free
     access: [public-web]
     evidence_level: professional-guidance
-    evidence_basis: "Institute for Healthcare Improvement toolkit/white paper identified in the DocTalk research landscape."
-    privacy: "Not applicable to informational browsing."
-    confidentiality: "Not applicable to informational browsing."
+    evidence_basis: "IHI-reviewed available evidence for interventions protecting staff mental health under extreme working conditions (natural disasters, terrorist attacks, previous pandemics) and synthesized evidence-based recommendations; each recommendation carries an 'Evidence in Literature' citation section and actionable examples. Tool page resolved 2026-10-10."
+    privacy: "Not applicable to informational browsing; no confidentiality claims documented on IHI's pages (2026-10-10)."
+    confidentiality: "Not applicable to informational browsing; no confidentiality claims documented on IHI's pages (2026-10-10)."
     clinical_use: false
     emergency_resource: false
-    language_access: "Verify."
-    last_reviewed: "2026-10-07"
-    review_status: pending_verification
+    language_access: "Not documented on IHI page checked; marked unknown (2026-10-10)."
+    last_reviewed: "2026-10-10"
+    review_status: verified-entry
     source_organization: "Institute for Healthcare Improvement"
-    official_url: "https://www.ihi.org/"
-    description: "Organizational resource addressing psychological support and workforce wellbeing."
-    limitations: "Verify current title, URL, and applicability before publication."
+    official_url: "https://www.ihi.org/library/tools/psychological-ppe-promote-health-care-workforce-mental-health-and-well-being"
+    description: "IHI's 'Psychological PPE' tool: evidence-based individual and system-level recommendations for protecting health-care workforce mental health and well-being, aimed at health care staff and unit/team leaders during and after the COVID-19 pandemic. Each recommendation pairs actionable examples (e.g., day-off norms, buddy systems, peer-support availability, leader conversations) with literature evidence, plus a visual graphic designed for posting in staff areas."
+    limitations: "Framed around COVID-19 pandemic conditions; an organizational-leadership resource, not a crisis or counseling service. Licensing/permission terms not documented on the page checked."
   - id: nami-health-care-professionals-peer-support
     name: "NAMI Peer Support Resources for Health Care Professionals"
     audience: [medical-student, resident, physician, mental-health-professional]
