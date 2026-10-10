@@ -1,0 +1,80 @@
+# DocTalk Needs Wall — canonical data
+#
+# A need enters this file ONLY from a real submission: a GitHub Discussion,
+# a contributor form, or documented outreach (including transcription of
+# published survey findings, with the publication recorded as provenance).
+# Maintainers may clarify wording; they NEVER invent needs on the
+# community's behalf. An honest empty wall beats invented needs.
+#
+# Schema per docs/needs-wall-spec.md §4:
+# - id:                lowercase-hyphenated, unique (need-001, need-002, ...)
+# - title:             brief, plain-language
+# - audience:          reuse the resource schema audience vocabulary:
+#                      medical-student, resident, physician, fellow, educator,
+#                      mental-health-professional, researcher, institution, general
+# - domains:           controlled list: scheduling, documentation, rest/sleep,
+#                      peer-connection, mentorship, family/caregiving, financial,
+#                      licensing-confidentiality, belonging, career-transitions,
+#                      moral-distress
+# - description:       what is missing or painful, in the submitter's terms
+# - why_it_matters:    why this would improve quality of life or care
+# - submitted_via:     discussion | form | outreach
+# - submitted_ref:     provenance URL when public (discussion link, publication)
+# - status:            submitted | under-review | matched | in-progress |
+#                      addressed | out-of-scope
+# - related_resources: ids from data/resources.yml ("while you wait, these exist")
+# - created_date:      YYYY-MM-DD
+# - notes:             maintainer notes; never submitter PII. Records that were
+#                      transcribed from literature (not direct submissions) say so here.
+
+schema_version: "1.0"
+needs:
+  - id: need-001
+    title: "Mental-health care that fits around clinical hours"
+    audience: [resident]
+    domains: [scheduling]
+    description: >-
+      Across four published surveys of resident physicians, time is the
+      highest-rated barrier to accessing mental-health care: appointment
+      availability that conflicts with clinical responsibilities keeps
+      residents from care, not lack of interest.
+    why_it_matters: >-
+      Opt-in services that require trainees to seek, schedule, and make time
+      fail the residents who need them most; programs that solved scheduling
+      (off-hours slots, shorter appointments, protected time) saw markedly
+      higher use.
+    submitted_via: outreach
+    submitted_ref: "http://jgme.kglmeridian.com/view/journals/jgme/16/3/article-p374.xml"
+    status: submitted
+    related_resources: []
+    created_date: 2026-10-10
+    notes: >-
+      Transcribed by maintainer from published survey literature (Slavin et
+      al., J Grad Med Educ 2024, summarizing Guille et al. 2007-2009, Ey et
+      al. 2013, Aaronson et al. 2017, and Montefiore 2022). Not a direct
+      community submission; awaiting community validation and maintainer triage.
+
+  - id: need-002
+    title: "Mental-health care that stays out of the hospital record"
+    audience: [resident, medical-student]
+    domains: [licensing-confidentiality]
+    description: >-
+      Residents cite concerns about documentation in the electronic health
+      record, confidentiality, cost, and stigma — what others might think,
+      others' confidence in their ability — as significant barriers to
+      seeking mental-health care.
+    why_it_matters: >-
+      Fear that seeking care could change how colleagues view them, or touch
+      licensing and credentialing, deters help-seeking even where
+      confidential services exist. Programs whose records sit outside the
+      hospital EHR report diminished confidentiality concerns.
+    submitted_via: outreach
+    submitted_ref: "http://jgme.kglmeridian.com/view/journals/jgme/16/3/article-p374.xml"
+    status: submitted
+    related_resources: []
+    created_date: 2026-10-10
+    notes: >-
+      Transcribed by maintainer from published survey literature (Slavin et
+      al., J Grad Med Educ 2024, summarizing Guille et al. 2007-2009, Ey et
+      al. 2013, Aaronson et al. 2017, and Montefiore 2022). Not a direct
+      community submission; awaiting community validation and maintainer triage.

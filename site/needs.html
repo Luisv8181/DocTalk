@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DocTalk Needs Wall: unmet needs and tool ideas shared by medical trainees and professionals.">
+  <title>DocTalk | Needs Wall</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="shell">
+      <p class="eyebrow">DOCTALK · NEEDS WALL</p>
+      <h1>What would help the people who practice medicine?</h1>
+      <p class="lede">A public record of unmet needs and tool ideas shared by medical students, residents, and physicians — the demand signal behind the catalog. Listing a need is not an endorsement of any solution, and nothing here is clinical advice.</p>
+      <div class="notice"><strong>In immediate danger or crisis?</strong> Use an appropriate emergency or crisis service. The Needs Wall is not for requesting clinical advice, diagnosis, or crisis help — those requests are redirected, not discussed. DocTalk is a resource navigator, not a crisis-triage or treatment service.</div>
+    </div>
+  </header>
+  <main class="shell">
+    <section class="intro">
+      <h2>The wall.</h2>
+      <p>Each need is transcribed from a real submission — a community discussion, a form, or published survey findings with recorded provenance. Maintainers never invent needs. Share yours in the <a href="https://github.com/Luisv8181/DocTalk/discussions">Needs &amp; ideas discussion</a>.</p>
+    </section>
+    <section class="filters" aria-label="Need filters">
+      <label>Audience
+        <select id="audience"><option value="">Everyone</option></select>
+      </label>
+      <label>Domain
+        <select id="domain"><option value="">All domains</option></select>
+      </label>
+      <label>Status
+        <select id="status"><option value="">All statuses</option></select>
+      </label>
+      <label>Search
+        <input id="search" type="search" placeholder="Search needs">
+      </label>
+    </section>
+    <section aria-live="polite">
+      <p id="count" class="count"></p>
+      <div id="needs" class="grid"></div>
+    </section>
+  </main>
+  <footer class="shell footer">
+    <p>DocTalk is an informational discovery project. Inclusion does not equal endorsement.</p>
+    <p><a href="index.html">Resource catalog</a> · <a href="https://github.com/Luisv8181/DocTalk">GitHub</a></p>
+  </footer>
+  <script src="needs.js"></script>
+</body>
+</html>
