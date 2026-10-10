@@ -35,19 +35,19 @@ resources:
     region: [US]
     cost: free
     access: [phone]
-    evidence_level: qualitative-evidence
-    evidence_basis: "Research report describes clinician-focused peer support with positive qualitative feedback; verify current service details."
-    privacy: "Verify current privacy statement."
-    confidentiality: "Verify current confidentiality statement."
+    evidence_level: community-resource
+    evidence_basis: "No published outcome evaluation of this specific line was located. Peer-support program operated by a nonprofit and staffed by volunteer psychiatrists; news coverage documents operation since March 2020. 15-point checklist verification completed against physiciansupportline.com on 2026-10-10. Evidence level describes the service as a resource, not clinical efficacy."
+    privacy: "Homepage describes the line as 'Confidential & Anonymous' and states 'We report to no one' (2026-10-10). No separate written privacy policy was located on the official site."
+    confidentiality: "Homepage states the line is 'Free, Confidential & Anonymous' and 'We report to no one' (2026-10-10); calls are answered by volunteer psychiatrists, no appointment necessary."
     clinical_use: false
     emergency_resource: false
-    language_access: "Verify."
-    last_reviewed: "2026-10-07"
-    review_status: pending_verification
+    language_access: "Not documented on the official site; marked unknown (2026-10-10)."
+    last_reviewed: "2026-10-10"
+    review_status: verified-entry
     source_organization: "Physician Support Line"
     official_url: "https://www.physiciansupportline.com/"
-    description: "Clinician-oriented peer support resource identified in the DocTalk landscape research."
-    limitations: "Service hours, eligibility, and current operating status must be verified before publication."
+    description: "National peer-support line for U.S. physicians and medical students, staffed by hundreds of volunteer psychiatrists. Call 1-888-409-0141; no appointment necessary. Open Monday to Friday, 8:00 AM-11:00 PM ET, except federal holidays. Calls are free, confidential, and anonymous. For any issue, not just a crisis; peer support, not clinical treatment."
+    limitations: "Not a crisis hotline and not a medical provider; peer support, not clinical treatment. Hours limited to weekdays (ET); phone only. Eligibility limited to U.S. physicians and medical students."
 
   - id: federation-state-physician-health-programs
     name: "Federation of State Physician Health Programs"
