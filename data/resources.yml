@@ -97,7 +97,7 @@ resources:
 
   - id: acgme-well-being
     name: "ACGME Well-Being Resources"
-    audience: [resident, fellow, educator, institution]
+    audience: [resident, fellow, physician, educator, institution]
     type: toolkit
     topics: [resident-wellbeing, burnout, graduate-medical-education]
     scope: national
@@ -105,18 +105,18 @@ resources:
     cost: free
     access: [public-web]
     evidence_level: professional-guidance
-    evidence_basis: "ACGME organizational guidance; verify current resource collection."
-    privacy: "Not applicable to informational browsing."
-    confidentiality: "Not applicable to informational browsing."
+    evidence_basis: "ACGME organizational guidance; AWARE suite (video skill-building workshop for program directors/DIOs, CBT-informed app for individual physicians, two podcast series) launched 2019, announcement page resolved 2026-10-10; well-being tools remain curated in Learn at ACGME per ACGME's July 2025 update."
+    privacy: "Not applicable to informational browsing; ACGME publishes no confidentiality claims for the AWARE app on its site (2026-10-10)."
+    confidentiality: "Not applicable to informational browsing; no confidentiality claims documented on ACGME's pages (2026-10-10)."
     clinical_use: false
     emergency_resource: false
-    language_access: "Verify."
-    last_reviewed: "2026-10-07"
-    review_status: pending_verification
+    language_access: "Not documented on ACGME pages checked; marked unknown (2026-10-10)."
+    last_reviewed: "2026-10-10"
+    review_status: verified-entry
     source_organization: "Accreditation Council for Graduate Medical Education"
-    official_url: "https://www.acgme.org/"
-    description: "ACGME resource family relevant to resident and GME wellbeing."
-    limitations: "This record is a starter placeholder until the exact current ACGME page is verified."
+    official_url: "https://www.acgme.org/newsroom/2019/12/acgme-launches-aware-well-being-resources"
+    description: "ACGME's well-being resource family for the GME community: the AWARE suite (video workshop for program directors/DIOs, CBT-informed well-being app for individual physicians in Apple/Google app stores, two podcast series), plus ongoing curated tools in Learn at ACGME. All AWARE resources are free of charge; some Learn-at-ACGME content requires a free account, and a select few items are proprietary."
+    limitations: "Some Learn-at-ACGME content requires a free account; a select few resources are proprietary. AWARE resources are licensed under a Creative Commons attribution-for-education license. Not a crisis or counseling service. Current app-store availability of the AWARE app was not directly re-confirmed in this review."
 
   - id: ihi-psychological-ppe
     name: "IHI Psychological PPE"
