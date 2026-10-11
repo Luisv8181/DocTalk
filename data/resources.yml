@@ -179,8 +179,8 @@ resources:
     clinical_use: false
     emergency_resource: true
     language_access: "Varies."
-    last_reviewed: "2026-10-07"
-    review_status: verified-source-pending-entry-review
+    last_reviewed: "2026-10-11"
+    review_status: verified-entry
     source_organization: "Federation of State Physician Health Programs"
     official_url: "https://www.fsphp.org/physician-suicide-prevention-resources"
     description: "Centralized physician-focused suicide-prevention resource page including crisis and peer-support options."
