@@ -147,17 +147,17 @@ resources:
     topics: [peer-support, mental-health, physician-wellbeing, help-seeking]
     scope: national
     region: [US]
-    cost: free
+    cost: varies
     access: [public-web]
     evidence_level: professional-guidance
-    evidence_basis: "NAMI maintains a health-care-professional peer-support resource collection."
+    evidence_basis: "NAMI maintains a health-care-professional peer-support resource collection. 15-point checklist verification completed against nami.org on 2026-10-11; evidence level describes the resource as a curated collection, not clinical efficacy."
     privacy: "Review individual linked programs for their own terms."
     confidentiality: "Varies by linked program; verify."
     clinical_use: false
     emergency_resource: false
-    language_access: "Varies."
-    last_reviewed: "2026-10-07"
-    review_status: verified-source-pending-entry-review
+    language_access: "Not documented on the NAMI page for the collection; varies by linked program."
+    last_reviewed: "2026-10-11"
+    review_status: verified-entry
     source_organization: "National Alliance on Mental Illness"
     official_url: "https://www.nami.org/frontline-professionals/health-care-professionals/peer-support-resources/"
     description: "Curated peer-support pathways and organizations relevant to health care professionals."
