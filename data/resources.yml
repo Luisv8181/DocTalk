@@ -1,394 +1,684 @@
-schema_version: "0.1"
-
+schema_version: '0.1'
 resources:
-  # NOTE: These are starter records for architecture testing. Each record is marked
-  # pending_verification until current source details have been independently checked.
-  - id: 988-suicide-crisis-lifeline
-    name: "988 Suicide & Crisis Lifeline"
-    audience: [general, medical-student, resident, physician, mental-health-professional]
-    type: crisis-support
-    topics: [suicide-prevention, crisis-support, mental-health]
-    scope: national
-    region: [US]
-    cost: free
-    access: [phone, text, chat, public-web]
-    evidence_level: institutional-resource
-    evidence_basis: "Operated under a cooperative agreement with SAMHSA (U.S. Department of Health and Human Services). 15-point checklist verification completed against 988lifeline.org and its Terms of Service on 2026-10-09. Evidence level describes the service as a resource, not clinical efficacy."
-    privacy: "No personally identifiable information required to receive support. Terms of Service: contact information is not shared outside the 988 Lifeline without consent, except imminent-risk exceptions (imminent physical harm, suicide attempt or overdose in progress, medical emergency, abuse/neglect, threats to a contact center), in which PII may be disclosed to 911/law enforcement/mobile crisis."
-    confidentiality: "Homepage states conversations are 'free and confidential'. Terms of Service: 'You have the right to expect that information about your contact with the 988 Lifeline will not be shared outside the 988 Lifeline without your consent', subject to the imminent-risk exceptions noted under privacy."
-    clinical_use: false
-    emergency_resource: true
-    language_access: "Interpretation services provided at no cost for people whose primary language is not English; Deaf/HoH resources and ASL videophone available."
-    last_reviewed: "2026-10-09"
-    review_status: verified-entry
-    source_organization: "988 Suicide & Crisis Lifeline"
-    official_url: "https://988lifeline.org/"
-    description: "National crisis-support entry point for people experiencing suicidal, mental-health, or substance-use crisis. Available 24/7/365: call or text 988, web chat (chat.988lifeline.org), or ASL videophone."
-    limitations: "Not a medical provider or a substitute for emergency medical services or ongoing clinical care; call 911 first for an immediate physical safety threat. SAMHSA and the network administrator charge no fee, but carrier phone-plan charges, emergency-dispatch costs, and outside-referral costs may apply."
-
-  - id: physician-support-line
-    name: "Physician Support Line"
-    audience: [medical-student, resident, physician]
-    type: peer-support
-    topics: [physician-wellbeing, peer-support, stress, anxiety, depression]
-    scope: national
-    region: [US]
-    cost: free
-    access: [phone]
-    evidence_level: community-resource
-    evidence_basis: "No published outcome evaluation of this specific line was located. Peer-support program operated by a nonprofit and staffed by volunteer psychiatrists; news coverage documents operation since March 2020. 15-point checklist verification completed against physiciansupportline.com on 2026-10-10. Evidence level describes the service as a resource, not clinical efficacy."
-    privacy: "Homepage describes the line as 'Confidential & Anonymous' and states 'We report to no one' (2026-10-10). No separate written privacy policy was located on the official site."
-    confidentiality: "Homepage states the line is 'Free, Confidential & Anonymous' and 'We report to no one' (2026-10-10); calls are answered by volunteer psychiatrists, no appointment necessary."
-    clinical_use: false
-    emergency_resource: false
-    language_access: "Not documented on the official site; marked unknown (2026-10-10)."
-    last_reviewed: "2026-10-10"
-    review_status: verified-entry
-    source_organization: "Physician Support Line"
-    official_url: "https://www.physiciansupportline.com/"
-    description: "National peer-support line for U.S. physicians and medical students, staffed by hundreds of volunteer psychiatrists. Call 1-888-409-0141; no appointment necessary. Open Monday to Friday, 8:00 AM-11:00 PM ET, except federal holidays. Calls are free, confidential, and anonymous. For any issue, not just a crisis; peer support, not clinical treatment."
-    limitations: "Not a crisis hotline and not a medical provider; peer support, not clinical treatment. Hours limited to weekdays (ET); phone only. Eligibility limited to U.S. physicians and medical students."
-
-  - id: federation-state-physician-health-programs
-    name: "Federation of State Physician Health Programs"
-    audience: [physician, resident, fellow]
-    type: physician-health-program
-    topics: [physician-wellbeing, substance-use, mental-health, professional-support]
-    scope: national
-    region: [US]
-    cost: varies
-    access: [public-web, referral-required]
-    evidence_level: professional-guidance
-    evidence_basis: "Established state-based physician health infrastructure; program models and confidentiality terms vary by jurisdiction."
-    privacy: "Jurisdiction-specific."
-    confidentiality: "Jurisdiction-specific. Verify before presenting as confidential."
-    clinical_use: true
-    emergency_resource: false
-    language_access: "Varies."
-    last_reviewed: "2026-10-10"
-    review_status: verified-entry
-    source_organization: "Federation of State Physician Health Programs"
-    official_url: "https://www.fsphp.org/"
-    description: "Directory and federation information for state physician health programs."
-    limitations: "State programs differ in eligibility, confidentiality, reporting, and services."
-
-  - id: aamc-mental-health-resources
-    name: "AAMC Medical Student Mental Health Resources"
-    audience: [medical-student, educator, institution]
-    type: directory
-    topics: [medical-student-wellbeing, mental-health, education]
-    scope: national
-    region: [US]
-    cost: free
-    access: [public-web]
-    evidence_level: professional-guidance
-    evidence_basis: "Professional medical-education organization resource: curated well-being article collection on the AAMC Students & Residents site; not an evaluated intervention."
-    privacy: "Not applicable to informational browsing."
-    confidentiality: "Not applicable to informational browsing."
-    clinical_use: false
-    emergency_resource: false
-    language_access: "English (site content); other languages not documented."
-    last_reviewed: "2026-10-10"
-    review_status: verified-entry
-    source_organization: "Association of American Medical Colleges"
-    official_url: "https://students-residents.aamc.org/attending-medical-school/medical-student-mental-health-and-well-being"
-    description: "AAMC curated hub of medical student mental-health and well-being resources: articles and stories from student service providers, faculty, staff, and current medical students covering resilience, stress management, finances, healthy living, purpose, relationships, and navigating care for mental health."
-    limitations: "Informational resource collection; not a crisis service and not a substitute for care. Page links to articles on navigating care for mental health."
-
-  - id: acgme-well-being
-    name: "ACGME Well-Being Resources"
-    audience: [resident, fellow, physician, educator, institution]
-    type: toolkit
-    topics: [resident-wellbeing, burnout, graduate-medical-education]
-    scope: national
-    region: [US]
-    cost: free
-    access: [public-web]
-    evidence_level: professional-guidance
-    evidence_basis: "ACGME organizational guidance; AWARE suite (video skill-building workshop for program directors/DIOs, CBT-informed app for individual physicians, two podcast series) launched 2019, announcement page resolved 2026-10-10; well-being tools remain curated in Learn at ACGME per ACGME's July 2025 update."
-    privacy: "Not applicable to informational browsing; ACGME publishes no confidentiality claims for the AWARE app on its site (2026-10-10)."
-    confidentiality: "Not applicable to informational browsing; no confidentiality claims documented on ACGME's pages (2026-10-10)."
-    clinical_use: false
-    emergency_resource: false
-    language_access: "Not documented on ACGME pages checked; marked unknown (2026-10-10)."
-    last_reviewed: "2026-10-10"
-    review_status: verified-entry
-    source_organization: "Accreditation Council for Graduate Medical Education"
-    official_url: "https://www.acgme.org/newsroom/2019/12/acgme-launches-aware-well-being-resources"
-    description: "ACGME's well-being resource family for the GME community: the AWARE suite (video workshop for program directors/DIOs, CBT-informed well-being app for individual physicians in Apple/Google app stores, two podcast series), plus ongoing curated tools in Learn at ACGME. All AWARE resources are free of charge; some Learn-at-ACGME content requires a free account, and a select few items are proprietary."
-    limitations: "Some Learn-at-ACGME content requires a free account; a select few resources are proprietary. AWARE resources are licensed under a Creative Commons attribution-for-education license. Not a crisis or counseling service. Current app-store availability of the AWARE app was not directly re-confirmed in this review."
-
-  - id: ihi-psychological-ppe
-    name: "IHI Psychological PPE"
-    audience: [physician, resident, medical-student, educator, institution]
-    type: toolkit
-    topics: [psychological-safety, burnout, workforce-wellbeing, organizational-change]
-    scope: international
-    region: [global]
-    cost: free
-    access: [public-web]
-    evidence_level: professional-guidance
-    evidence_basis: "IHI-reviewed available evidence for interventions protecting staff mental health under extreme working conditions (natural disasters, terrorist attacks, previous pandemics) and synthesized evidence-based recommendations; each recommendation carries an 'Evidence in Literature' citation section and actionable examples. Tool page resolved 2026-10-10."
-    privacy: "Not applicable to informational browsing; no confidentiality claims documented on IHI's pages (2026-10-10)."
-    confidentiality: "Not applicable to informational browsing; no confidentiality claims documented on IHI's pages (2026-10-10)."
-    clinical_use: false
-    emergency_resource: false
-    language_access: "Not documented on IHI page checked; marked unknown (2026-10-10)."
-    last_reviewed: "2026-10-10"
-    review_status: verified-entry
-    source_organization: "Institute for Healthcare Improvement"
-    official_url: "https://www.ihi.org/library/tools/psychological-ppe-promote-health-care-workforce-mental-health-and-well-being"
-    description: "IHI's 'Psychological PPE' tool: evidence-based individual and system-level recommendations for protecting health-care workforce mental health and well-being, aimed at health care staff and unit/team leaders during and after the COVID-19 pandemic. Each recommendation pairs actionable examples (e.g., day-off norms, buddy systems, peer-support availability, leader conversations) with literature evidence, plus a visual graphic designed for posting in staff areas."
-    limitations: "Framed around COVID-19 pandemic conditions; an organizational-leadership resource, not a crisis or counseling service. Licensing/permission terms not documented on the page checked."
-  - id: nami-health-care-professionals-peer-support
-    name: "NAMI Peer Support Resources for Health Care Professionals"
-    audience: [medical-student, resident, physician, mental-health-professional]
-    type: peer-support
-    topics: [peer-support, mental-health, physician-wellbeing, help-seeking]
-    scope: national
-    region: [US]
-    cost: varies
-    access: [public-web]
-    evidence_level: professional-guidance
-    evidence_basis: "NAMI maintains a health-care-professional peer-support resource collection. 15-point checklist verification completed against nami.org on 2026-10-11; evidence level describes the resource as a curated collection, not clinical efficacy."
-    privacy: "Review individual linked programs for their own terms."
-    confidentiality: "Varies by linked program; verify."
-    clinical_use: false
-    emergency_resource: false
-    language_access: "Not documented on the NAMI page for the collection; varies by linked program."
-    last_reviewed: "2026-10-11"
-    review_status: verified-entry
-    source_organization: "National Alliance on Mental Illness"
-    official_url: "https://www.nami.org/frontline-professionals/health-care-professionals/peer-support-resources/"
-    description: "Curated peer-support pathways and organizations relevant to health care professionals."
-    limitations: "The collection contains multiple external programs with different eligibility and operating details."
-
-  - id: fsphp-physician-suicide-prevention-resources
-    name: "FSPHP Physician Suicide Prevention Resources"
-    audience: [medical-student, resident, physician, educator]
-    type: toolkit
-    topics: [suicide-prevention, physician-wellbeing, crisis-support, help-seeking]
-    scope: national
-    region: [US]
-    cost: free
-    access: [public-web]
-    evidence_level: professional-guidance
-    evidence_basis: "FSPHP-maintained resource page consolidating physician suicide-prevention and support pathways."
-    privacy: "Review each linked service."
-    confidentiality: "Varies by linked service."
-    clinical_use: false
-    emergency_resource: true
-    language_access: "Varies."
-    last_reviewed: "2026-10-11"
-    review_status: verified-entry
-    source_organization: "Federation of State Physician Health Programs"
-    official_url: "https://www.fsphp.org/physician-suicide-prevention-resources"
-    description: "Centralized physician-focused suicide-prevention resource page including crisis and peer-support options."
-    limitations: "Some linked resources are external and may change independently."
-
-  - id: stanford-wellbeing-toolkit
-    name: "Stanford WellMD & WellPhD Well-Being Tools for Organizations"
-    audience: [physician, resident, fellow, educator, institution]
-    type: toolkit
-    topics: [burnout, professional-fulfillment, organizational-wellbeing, measurement]
-    scope: international
-    region: [global]
-    cost: varies
-    access: [public-web]
-    evidence_level: professional-guidance
-    evidence_basis: "Stanford provides evidence-informed organizational tools and a model of occupational well-being."
-    privacy: "Depends on tool and deployment."
-    confidentiality: "Depends on tool and deployment."
-    clinical_use: false
-    emergency_resource: false
-    language_access: "Verify."
-    last_reviewed: "2026-10-11"
-    review_status: verified-entry
-    source_organization: "Stanford Medicine WellMD & WellPhD"
-    official_url: "https://wellmd.stanford.edu/wellbeing-toolkit.html"
-    description: "Frameworks and tools for measuring, assessing, and improving occupational well-being."
-    limitations: "Some instruments have specific permission or use conditions."
-
-  - id: stanford-professional-fulfillment-index
-    name: "Stanford Professional Fulfillment Index"
-    audience: [physician, resident, fellow, educator, institution, researcher]
-    type: assessment
-    topics: [burnout, professional-fulfillment, measurement, research]
-    scope: international
-    region: [global]
-    cost: free
-    access: [public-web]
-    evidence_level: controlled-study
-    evidence_basis: "Stanford describes the PFI as a validated instrument used to assess burnout and professional fulfillment."
-    privacy: "Local administration determines data handling."
-    confidentiality: "Depends on administration context."
-    clinical_use: false
-    emergency_resource: false
-    language_access: "Verify."
-    last_reviewed: "2026-10-07"
-    review_status: verified-source-pending-entry-review
-    source_organization: "Stanford Medicine WellMD & WellPhD"
-    official_url: "https://wellmd.stanford.edu/wellbeing-toolkit/professional-fulfillment-index.html"
-    description: "Validated survey instrument for physician well-being measurement, covering burnout and professional fulfillment."
-    limitations: "Permission requirements can differ based on whether the instrument is modified and how it is administered."
-
-  - id: joint-commission-worker-wellbeing-resource-center
-    name: "Joint Commission Workforce Safety & Well-Being Resource Center"
-    audience: [physician, resident, medical-student, educator, institution]
-    type: policy
-    topics: [workforce-wellbeing, burnout, organizational-change, safety]
-    scope: national
-    region: [US]
-    cost: free
-    access: [public-web]
-    evidence_level: professional-guidance
-    evidence_basis: "Joint Commission resource center organizes workforce well-being resources and action steps."
-    privacy: "Not applicable to informational browsing."
-    confidentiality: "Not applicable to informational browsing."
-    clinical_use: false
-    emergency_resource: false
-    language_access: "Verify."
-    last_reviewed: "2026-10-07"
-    review_status: verified-source-pending-entry-review
-    source_organization: "The Joint Commission"
-    official_url: "https://www.jointcommission.org/en-us/knowledge-library/workforce-safety-and-well-being-resource-center/worker-well-being"
-    description: "Organizational workforce well-being resources focused on system-level approaches to burnout and clinician safety."
-    limitations: "Primarily organizational rather than individual treatment support."
-
-  - id: nami-helpline
-    name: "NAMI HelpLine"
-    audience: [general, medical-student, resident, physician, mental-health-professional]
-    type: peer-support
-    topics: [mental-health, help-seeking, peer-support, crisis-support]
-    scope: national
-    region: [US]
-    cost: free
-    access: [phone, text, email, public-web]
-    evidence_level: institutional-resource
-    evidence_basis: "NAMI describes the HelpLine as a nationwide service providing emotional support, mental-health information, and resource referral."
-    privacy: "NAMI states that it does not ask callers for identifying information, while noting that phone/text contact exposes the user's phone number."
-    confidentiality: "Review current HelpLine terms before publication; the service is not a crisis hotline or professional mental-health service."
-    clinical_use: false
-    emergency_resource: false
-    language_access: "English and Spanish support are documented; verify current availability."
-    last_reviewed: "2026-10-07"
-    review_status: verified-source-pending-entry-review
-    source_organization: "National Alliance on Mental Illness"
-    official_url: "https://www.nami.org/nami-helpline/"
-    description: "Free nationwide mental-health information, resource referral, and peer-support service."
-    limitations: "Not a crisis or suicide hotline and not a substitute for diagnosis, treatment, or a therapist-client relationship."
-
-  - id: ama-steps-forward
-    name: "AMA STEPS Forward"
-    audience: [physician, resident, fellow, educator, institution, researcher]
-    type: toolkit
-    topics: [burnout, professional-fulfillment, workforce-wellbeing, organizational-change, artificial-intelligence]
-    scope: national
-    region: [US]
-    cost: free
-    access: [public-web]
-    evidence_level: professional-guidance
-    evidence_basis: "AMA STEPS Forward provides physician-developed practice resources addressing physician well-being, workflow, burnout, and organizational change."
-    privacy: "Not applicable to informational browsing."
-    confidentiality: "Not applicable to informational browsing."
-    clinical_use: false
-    emergency_resource: false
-    language_access: "Verify."
-    last_reviewed: "2026-10-07"
-    review_status: verified-source-pending-entry-review
-    source_organization: "American Medical Association"
-    official_url: "https://www.ama-assn.org/practice-management/ama-steps-forward-program"
-    description: "Open-access physician well-being and practice-improvement resources, including tools for burnout, workflow, organizational well-being, and technology."
-    limitations: "Resources vary in intended audience, evidence basis, and implementation context."
-
-  - id: peerrxmed
-    name: "PeerRxMed"
-    audience: [physician, resident, fellow]
-    type: digital-tool
-    topics: [physician-wellbeing, peer-support, burnout]
-    scope: national
-    region: [US]
-    cost: free
-    access: [public-web]
-    evidence_level: community-resource
-    evidence_basis: "Peer-led program described by its organizers as a free buddy system for physicians; covered by the AMA as a physician peer-support model."
-    privacy: "Site states newsletter email addresses are never shared with others; the buddy program itself pairs participants with a self-chosen partner and is not presented as anonymous."
-    confidentiality: "Not presented as confidential; peer-to-peer format."
-    clinical_use: false
-    emergency_resource: false
-    language_access: "English (site content); other languages not documented."
-    last_reviewed: "2026-10-09"
-    review_status: verified-source-pending-entry-review
-    source_organization: "PeerRxMed"
-    official_url: "https://www.peerrxmed.com/"
-    description: "Free peer-to-peer program pairing physicians and other health care workers in a buddy system (PRx90) with weekly check-in prompts to support connection and well-being."
-    limitations: "Peer support, not clinical care. Participants choose their own buddy; no professional matching, crisis response, or published outcome data."
-
-  - id: mayo-clinic-well-being-index
-    name: "Mayo Clinic Well-Being Index"
-    audience: [physician, resident, fellow, medical-student]
-    type: digital-tool
-    topics: [burnout, physician-wellbeing, measurement, professional-fulfillment]
-    scope: international
-    region: [global]
-    cost: varies
-    access: [institution-required]
-    evidence_level: controlled-study
-    evidence_basis: "Mayo Clinic describes the Well-Being Index as a validated 9-question instrument with 10+ years of validation research; exclusively licensed to MedEd Web Solutions."
-    privacy: "Vendor states the tool is 100% anonymous by architecture with an anonymity threshold, and individual results are never seen by leadership or HR."
-    confidentiality: "Individual results private; organizations receive aggregate reports only."
-    clinical_use: false
-    emergency_resource: false
-    language_access: "Verify."
-    last_reviewed: "2026-10-09"
-    review_status: verified-source-pending-entry-review
-    source_organization: "Mayo Clinic (licensed to MedEd Web Solutions)"
-    official_url: "https://www.mywellbeingindex.org"
-    description: "Online and mobile self-assessment measuring six dimensions of distress and well-being in nine questions, with role-specific versions for physicians, residents, fellows, and medical students."
-    limitations: "Organizational product: individual access requires a participating employer or institution. Pricing via vendor contact; verify current terms before publication."
-
-  - id: therapy-aid-coalition
-    name: "Therapy Aid Coalition"
-    audience: [physician, resident, fellow, medical-student]
-    type: digital-tool
-    topics: [mental-health, counseling, physician-wellbeing, help-seeking]
-    scope: national
-    region: [US]
-    cost: varies
-    access: [public-web]
-    evidence_level: community-resource
-    evidence_basis: "501(c)(3) nonprofit network (EIN 85-0791885, Therapy Aid Coalition Inc, confirmed via ProPublica Nonprofit Explorer sourced to the IRS Exempt Organizations Business Master File extract, checked 2026-10-10); program pages describe pro-bono or reduced-fee therapy matching for health care workers."
-    privacy: "Platform-level privacy terms not documented in sources checked."
-    confidentiality: "Therapy occurred under the therapist-client relationship while active; platform-level confidentiality terms not documented in sources checked."
-    clinical_use: true
-    emergency_resource: false
-    language_access: "English (site content); other languages not documented."
-    last_reviewed: "2026-10-10"
-    review_status: verified-entry
-    source_organization: "Therapy Aid Coalition"
-    official_url: "https://www.therapyaid.org/"
-    description: "Former nonprofit network that connected US health care professionals and first responders with licensed therapists for pro-bono or reduced-fee therapy. The program has closed: the official site now carries a sunset announcement ('Therapy Aid is Sunsetting... We have closed our doors', verified 2026-10-10) and directs visitors to other organizations' resource pages."
-    limitations: "SUNSET/DISCONTINUED: therapy matching is no longer operating (official homepage sunset announcement re-confirmed live 2026-10-10: 'Therapy Aid is Sunsetting... We have closed our doors'). The homepage directs visitors to other organizations' resource pages, which are the actionable referral for anyone reaching this listing. Kept as a verified entry so the directory states the closure plainly instead of showing a dead listing; not an active service. A stale volunteer-signup page was previously observed at the old /register path."
-
-  - id: vital-worklife
-    name: "VITAL WorkLife"
-    audience: [physician, resident, fellow]
-    type: digital-tool
-    topics: [physician-wellbeing, burnout, counseling, peer-support]
-    scope: national
-    region: [US]
-    cost: free
-    access: [membership-required]
-    evidence_level: institutional-resource
-    evidence_basis: "Healthcare-focused employee assistance program; official materials describe the app, assessments, and counseling services."
-    privacy: "Vendor states app and assessment information is strictly confidential, HIPAA-compliant, and never shared; employer does not know who uses the resources."
-    confidentiality: "EAP use described as confidential, with standard legal exceptions such as safety risk."
-    clinical_use: true
-    emergency_resource: false
-    language_access: "Verify."
-    last_reviewed: "2026-10-09"
-    review_status: verified-source-pending-entry-review
-    source_organization: "VITAL WorkLife, Inc."
-    official_url: "https://www.vitalworklife.com/"
-    description: "Healthcare-focused employee assistance program with a mobile app and digital platform offering well-being assessments, counseling access (phone, video, in-person), peer coaching, and 24/7 support."
-    limitations: "Available only through participating employers; free to members (employer-paid). Verify current app and program details before publication."
+- id: 988-suicide-crisis-lifeline
+  name: 988 Suicide & Crisis Lifeline
+  audience:
+  - general
+  - medical-student
+  - resident
+  - physician
+  - mental-health-professional
+  type: crisis-support
+  topics:
+  - suicide-prevention
+  - crisis-support
+  - mental-health
+  scope: national
+  region:
+  - US
+  cost: free
+  access:
+  - phone
+  - text
+  - chat
+  - public-web
+  evidence_level: institutional-resource
+  evidence_basis: Operated under a cooperative agreement with SAMHSA (U.S. Department
+    of Health and Human Services). 15-point checklist verification completed against
+    988lifeline.org and its Terms of Service on 2026-10-09. Evidence level describes
+    the service as a resource, not clinical efficacy.
+  privacy: 'No personally identifiable information required to receive support. Terms
+    of Service: contact information is not shared outside the 988 Lifeline without
+    consent, except imminent-risk exceptions (imminent physical harm, suicide attempt
+    or overdose in progress, medical emergency, abuse/neglect, threats to a contact
+    center), in which PII may be disclosed to 911/law enforcement/mobile crisis.'
+  confidentiality: 'Homepage states conversations are ''free and confidential''. Terms
+    of Service: ''You have the right to expect that information about your contact
+    with the 988 Lifeline will not be shared outside the 988 Lifeline without your
+    consent'', subject to the imminent-risk exceptions noted under privacy.'
+  clinical_use: false
+  emergency_resource: true
+  language_access: Interpretation services provided at no cost for people whose primary
+    language is not English; Deaf/HoH resources and ASL videophone available.
+  last_reviewed: '2026-10-09'
+  review_status: verified-entry
+  source_organization: 988 Suicide & Crisis Lifeline
+  official_url: https://988lifeline.org/
+  description: 'National crisis-support entry point for people experiencing suicidal,
+    mental-health, or substance-use crisis. Available 24/7/365: call or text 988,
+    web chat (chat.988lifeline.org), or ASL videophone.'
+  limitations: Not a medical provider or a substitute for emergency medical services
+    or ongoing clinical care; call 911 first for an immediate physical safety threat.
+    SAMHSA and the network administrator charge no fee, but carrier phone-plan charges,
+    emergency-dispatch costs, and outside-referral costs may apply.
+- id: physician-support-line
+  name: Physician Support Line
+  audience:
+  - medical-student
+  - resident
+  - physician
+  type: peer-support
+  topics:
+  - physician-wellbeing
+  - peer-support
+  - stress
+  - anxiety
+  - depression
+  scope: national
+  region:
+  - US
+  cost: free
+  access:
+  - phone
+  evidence_level: community-resource
+  evidence_basis: No published outcome evaluation of this specific line was located.
+    Peer-support program operated by a nonprofit and staffed by volunteer psychiatrists;
+    news coverage documents operation since March 2020. 15-point checklist verification
+    completed against physiciansupportline.com on 2026-10-10. Evidence level describes
+    the service as a resource, not clinical efficacy.
+  privacy: Homepage describes the line as 'Confidential & Anonymous' and states 'We
+    report to no one' (2026-10-10). No separate written privacy policy was located
+    on the official site.
+  confidentiality: Homepage states the line is 'Free, Confidential & Anonymous' and
+    'We report to no one' (2026-10-10); calls are answered by volunteer psychiatrists,
+    no appointment necessary.
+  clinical_use: false
+  emergency_resource: false
+  language_access: Not documented on the official site; marked unknown (2026-10-10).
+  last_reviewed: '2026-10-10'
+  review_status: verified-entry
+  source_organization: Physician Support Line
+  official_url: https://www.physiciansupportline.com/
+  description: National peer-support line for U.S. physicians and medical students,
+    staffed by hundreds of volunteer psychiatrists. Call 1-888-409-0141; no appointment
+    necessary. Open Monday to Friday, 8:00 AM-11:00 PM ET, except federal holidays.
+    Calls are free, confidential, and anonymous. For any issue, not just a crisis;
+    peer support, not clinical treatment.
+  limitations: Not a crisis hotline and not a medical provider; peer support, not
+    clinical treatment. Hours limited to weekdays (ET); phone only. Eligibility limited
+    to U.S. physicians and medical students.
+- id: federation-state-physician-health-programs
+  name: Federation of State Physician Health Programs
+  audience:
+  - physician
+  - resident
+  - fellow
+  type: physician-health-program
+  topics:
+  - physician-wellbeing
+  - substance-use
+  - mental-health
+  - professional-support
+  scope: national
+  region:
+  - US
+  cost: varies
+  access:
+  - public-web
+  - referral-required
+  evidence_level: professional-guidance
+  evidence_basis: Established state-based physician health infrastructure; program
+    models and confidentiality terms vary by jurisdiction.
+  privacy: Jurisdiction-specific.
+  confidentiality: Jurisdiction-specific. Verify before presenting as confidential.
+  clinical_use: true
+  emergency_resource: false
+  language_access: Varies.
+  last_reviewed: '2026-10-10'
+  review_status: verified-entry
+  source_organization: Federation of State Physician Health Programs
+  official_url: https://www.fsphp.org/
+  description: Directory and federation information for state physician health programs.
+  limitations: State programs differ in eligibility, confidentiality, reporting, and
+    services.
+- id: aamc-mental-health-resources
+  name: AAMC Medical Student Mental Health Resources
+  audience:
+  - medical-student
+  - educator
+  - institution
+  type: directory
+  topics:
+  - medical-student-wellbeing
+  - mental-health
+  - education
+  scope: national
+  region:
+  - US
+  cost: free
+  access:
+  - public-web
+  evidence_level: professional-guidance
+  evidence_basis: 'Professional medical-education organization resource: curated well-being
+    article collection on the AAMC Students & Residents site; not an evaluated intervention.'
+  privacy: Not applicable to informational browsing.
+  confidentiality: Not applicable to informational browsing.
+  clinical_use: false
+  emergency_resource: false
+  language_access: English (site content); other languages not documented.
+  last_reviewed: '2026-10-10'
+  review_status: verified-entry
+  source_organization: Association of American Medical Colleges
+  official_url: https://students-residents.aamc.org/attending-medical-school/medical-student-mental-health-and-well-being
+  description: 'AAMC curated hub of medical student mental-health and well-being resources:
+    articles and stories from student service providers, faculty, staff, and current
+    medical students covering resilience, stress management, finances, healthy living,
+    purpose, relationships, and navigating care for mental health.'
+  limitations: Informational resource collection; not a crisis service and not a substitute
+    for care. Page links to articles on navigating care for mental health.
+- id: acgme-well-being
+  name: ACGME Well-Being Resources
+  audience:
+  - resident
+  - fellow
+  - physician
+  - educator
+  - institution
+  type: toolkit
+  topics:
+  - resident-wellbeing
+  - burnout
+  - graduate-medical-education
+  scope: national
+  region:
+  - US
+  cost: free
+  access:
+  - public-web
+  evidence_level: professional-guidance
+  evidence_basis: ACGME organizational guidance; AWARE suite (video skill-building
+    workshop for program directors/DIOs, CBT-informed app for individual physicians,
+    two podcast series) launched 2019, announcement page resolved 2026-10-10; well-being
+    tools remain curated in Learn at ACGME per ACGME's July 2025 update.
+  privacy: Not applicable to informational browsing; ACGME publishes no confidentiality
+    claims for the AWARE app on its site (2026-10-10).
+  confidentiality: Not applicable to informational browsing; no confidentiality claims
+    documented on ACGME's pages (2026-10-10).
+  clinical_use: false
+  emergency_resource: false
+  language_access: Not documented on ACGME pages checked; marked unknown (2026-10-10).
+  last_reviewed: '2026-10-10'
+  review_status: verified-entry
+  source_organization: Accreditation Council for Graduate Medical Education
+  official_url: https://www.acgme.org/newsroom/2019/12/acgme-launches-aware-well-being-resources
+  description: 'ACGME''s well-being resource family for the GME community: the AWARE
+    suite (video workshop for program directors/DIOs, CBT-informed well-being app
+    for individual physicians in Apple/Google app stores, two podcast series), plus
+    ongoing curated tools in Learn at ACGME. All AWARE resources are free of charge;
+    some Learn-at-ACGME content requires a free account, and a select few items are
+    proprietary.'
+  limitations: Some Learn-at-ACGME content requires a free account; a select few resources
+    are proprietary. AWARE resources are licensed under a Creative Commons attribution-for-education
+    license. Not a crisis or counseling service. Current app-store availability of
+    the AWARE app was not directly re-confirmed in this review.
+- id: ihi-psychological-ppe
+  name: IHI Psychological PPE
+  audience:
+  - physician
+  - resident
+  - medical-student
+  - educator
+  - institution
+  type: toolkit
+  topics:
+  - psychological-safety
+  - burnout
+  - workforce-wellbeing
+  - organizational-change
+  scope: international
+  region:
+  - global
+  cost: free
+  access:
+  - public-web
+  evidence_level: professional-guidance
+  evidence_basis: IHI-reviewed available evidence for interventions protecting staff
+    mental health under extreme working conditions (natural disasters, terrorist attacks,
+    previous pandemics) and synthesized evidence-based recommendations; each recommendation
+    carries an 'Evidence in Literature' citation section and actionable examples.
+    Tool page resolved 2026-10-10.
+  privacy: Not applicable to informational browsing; no confidentiality claims documented
+    on IHI's pages (2026-10-10).
+  confidentiality: Not applicable to informational browsing; no confidentiality claims
+    documented on IHI's pages (2026-10-10).
+  clinical_use: false
+  emergency_resource: false
+  language_access: Not documented on IHI page checked; marked unknown (2026-10-10).
+  last_reviewed: '2026-10-10'
+  review_status: verified-entry
+  source_organization: Institute for Healthcare Improvement
+  official_url: https://www.ihi.org/library/tools/psychological-ppe-promote-health-care-workforce-mental-health-and-well-being
+  description: 'IHI''s ''Psychological PPE'' tool: evidence-based individual and system-level
+    recommendations for protecting health-care workforce mental health and well-being,
+    aimed at health care staff and unit/team leaders during and after the COVID-19
+    pandemic. Each recommendation pairs actionable examples (e.g., day-off norms,
+    buddy systems, peer-support availability, leader conversations) with literature
+    evidence, plus a visual graphic designed for posting in staff areas.'
+  limitations: Framed around COVID-19 pandemic conditions; an organizational-leadership
+    resource, not a crisis or counseling service. Licensing/permission terms not documented
+    on the page checked.
+- id: nami-health-care-professionals-peer-support
+  name: NAMI Peer Support Resources for Health Care Professionals
+  audience:
+  - medical-student
+  - resident
+  - physician
+  - mental-health-professional
+  type: peer-support
+  topics:
+  - peer-support
+  - mental-health
+  - physician-wellbeing
+  - help-seeking
+  scope: national
+  region:
+  - US
+  cost: varies
+  access:
+  - public-web
+  evidence_level: professional-guidance
+  evidence_basis: NAMI maintains a health-care-professional peer-support resource
+    collection. 15-point checklist verification completed against nami.org on 2026-10-11;
+    evidence level describes the resource as a curated collection, not clinical efficacy.
+  privacy: Review individual linked programs for their own terms.
+  confidentiality: Varies by linked program; verify.
+  clinical_use: false
+  emergency_resource: false
+  language_access: Not documented on the NAMI page for the collection; varies by linked
+    program.
+  last_reviewed: '2026-10-11'
+  review_status: verified-entry
+  source_organization: National Alliance on Mental Illness
+  official_url: https://www.nami.org/frontline-professionals/health-care-professionals/peer-support-resources/
+  description: Curated peer-support pathways and organizations relevant to health
+    care professionals.
+  limitations: The collection contains multiple external programs with different eligibility
+    and operating details.
+- id: fsphp-physician-suicide-prevention-resources
+  name: FSPHP Physician Suicide Prevention Resources
+  audience:
+  - medical-student
+  - resident
+  - physician
+  - educator
+  type: toolkit
+  topics:
+  - suicide-prevention
+  - physician-wellbeing
+  - crisis-support
+  - help-seeking
+  scope: national
+  region:
+  - US
+  cost: free
+  access:
+  - public-web
+  evidence_level: professional-guidance
+  evidence_basis: FSPHP-maintained resource page consolidating physician suicide-prevention
+    and support pathways.
+  privacy: Review each linked service.
+  confidentiality: Varies by linked service.
+  clinical_use: false
+  emergency_resource: true
+  language_access: Varies.
+  last_reviewed: '2026-10-11'
+  review_status: verified-entry
+  source_organization: Federation of State Physician Health Programs
+  official_url: https://www.fsphp.org/physician-suicide-prevention-resources
+  description: Centralized physician-focused suicide-prevention resource page including
+    crisis and peer-support options.
+  limitations: Some linked resources are external and may change independently.
+- id: stanford-wellbeing-toolkit
+  name: Stanford WellMD & WellPhD Well-Being Tools for Organizations
+  audience:
+  - physician
+  - resident
+  - fellow
+  - educator
+  - institution
+  type: toolkit
+  topics:
+  - burnout
+  - professional-fulfillment
+  - organizational-wellbeing
+  - measurement
+  scope: international
+  region:
+  - global
+  cost: varies
+  access:
+  - public-web
+  evidence_level: professional-guidance
+  evidence_basis: Stanford provides evidence-informed organizational tools and a model
+    of occupational well-being.
+  privacy: Depends on tool and deployment.
+  confidentiality: Depends on tool and deployment.
+  clinical_use: false
+  emergency_resource: false
+  language_access: Verify.
+  last_reviewed: '2026-10-11'
+  review_status: verified-entry
+  source_organization: Stanford Medicine WellMD & WellPhD
+  official_url: https://wellmd.stanford.edu/wellbeing-toolkit.html
+  description: Frameworks and tools for measuring, assessing, and improving occupational
+    well-being.
+  limitations: Some instruments have specific permission or use conditions.
+- id: stanford-professional-fulfillment-index
+  name: Stanford Professional Fulfillment Index
+  audience:
+  - physician
+  - resident
+  - fellow
+  - institution
+  - researcher
+  type: assessment
+  topics:
+  - burnout
+  - professional-fulfillment
+  - measurement
+  - research
+  scope: unknown
+  region: unknown
+  cost: unknown
+  access:
+  - public-web
+  evidence_level: observational-research
+  evidence_basis: 'Stanford lists the 2018 Trockel et al. validation study (A Brief
+    Instrument to Assess Both Burnout and Professional Fulfillment in Physicians:
+    Reliability and Validity, Including Correlation with Self-Reported Medical Errors,
+    Acad Psychiatry 42:11-24) and states the National Academy of Medicine recognizes
+    the PFI as one of the few validated and reliable survey instruments for measuring
+    well-being and burnout.'
+  privacy: unknown
+  confidentiality: unknown
+  clinical_use: false
+  emergency_resource: false
+  language_access: unknown
+  last_reviewed: '2026-10-11'
+  review_status: verified-entry
+  source_organization: Stanford Medicine WellMD & WellPhD
+  official_url: https://wellmd.stanford.edu/wellbeing-toolkit/professional-fulfillment-index.html
+  description: Validated survey instrument developed by Stanford Medicine WellMD &
+    WellPhD to measure burnout and professional fulfillment in physicians and scientists.
+    Integrated into the Stanford Doctor Survey and Stanford Scientist Survey; also
+    used by the Healthcare Professional Well-Being Academic Consortium (PWAC). Obtaining
+    the instrument requires submitting a permission inquiry to Stanford.
+  limitations: Non-profit organizations may self-administer the PFI without modification
+    for research or program evaluation; modified use requires prior written permission
+    from the Stanford WellMD & WellPhD Center. Stanford publishes no cost, language-access,
+    regional-scope, or data-handling/privacy terms for the instrument; the using organization
+    administers it, so confirm confidentiality terms in the permission agreement before
+    use.
+- id: joint-commission-worker-wellbeing-resource-center
+  name: Joint Commission Workforce Safety & Well-Being Resource Center
+  audience:
+  - physician
+  - resident
+  - medical-student
+  - educator
+  - institution
+  type: policy
+  topics:
+  - workforce-wellbeing
+  - burnout
+  - organizational-change
+  - safety
+  scope: national
+  region:
+  - US
+  cost: free
+  access:
+  - public-web
+  evidence_level: professional-guidance
+  evidence_basis: Joint Commission resource center organizes workforce well-being
+    resources and action steps.
+  privacy: Not applicable to informational browsing.
+  confidentiality: Not applicable to informational browsing.
+  clinical_use: false
+  emergency_resource: false
+  language_access: Verify.
+  last_reviewed: '2026-10-07'
+  review_status: verified-source-pending-entry-review
+  source_organization: The Joint Commission
+  official_url: https://www.jointcommission.org/en-us/knowledge-library/workforce-safety-and-well-being-resource-center/worker-well-being
+  description: Organizational workforce well-being resources focused on system-level
+    approaches to burnout and clinician safety.
+  limitations: Primarily organizational rather than individual treatment support.
+- id: nami-helpline
+  name: NAMI HelpLine
+  audience:
+  - general
+  - medical-student
+  - resident
+  - physician
+  - mental-health-professional
+  type: peer-support
+  topics:
+  - mental-health
+  - help-seeking
+  - peer-support
+  - crisis-support
+  scope: national
+  region:
+  - US
+  cost: free
+  access:
+  - phone
+  - text
+  - email
+  - public-web
+  evidence_level: institutional-resource
+  evidence_basis: NAMI describes the HelpLine as a nationwide service providing emotional
+    support, mental-health information, and resource referral.
+  privacy: NAMI states that it does not ask callers for identifying information, while
+    noting that phone/text contact exposes the user's phone number.
+  confidentiality: Review current HelpLine terms before publication; the service is
+    not a crisis hotline or professional mental-health service.
+  clinical_use: false
+  emergency_resource: false
+  language_access: English and Spanish support are documented; verify current availability.
+  last_reviewed: '2026-10-07'
+  review_status: verified-source-pending-entry-review
+  source_organization: National Alliance on Mental Illness
+  official_url: https://www.nami.org/nami-helpline/
+  description: Free nationwide mental-health information, resource referral, and peer-support
+    service.
+  limitations: Not a crisis or suicide hotline and not a substitute for diagnosis,
+    treatment, or a therapist-client relationship.
+- id: ama-steps-forward
+  name: AMA STEPS Forward
+  audience:
+  - physician
+  - resident
+  - fellow
+  - educator
+  - institution
+  - researcher
+  type: toolkit
+  topics:
+  - burnout
+  - professional-fulfillment
+  - workforce-wellbeing
+  - organizational-change
+  - artificial-intelligence
+  scope: national
+  region:
+  - US
+  cost: free
+  access:
+  - public-web
+  evidence_level: professional-guidance
+  evidence_basis: AMA STEPS Forward provides physician-developed practice resources
+    addressing physician well-being, workflow, burnout, and organizational change.
+  privacy: Not applicable to informational browsing.
+  confidentiality: Not applicable to informational browsing.
+  clinical_use: false
+  emergency_resource: false
+  language_access: Verify.
+  last_reviewed: '2026-10-07'
+  review_status: verified-source-pending-entry-review
+  source_organization: American Medical Association
+  official_url: https://www.ama-assn.org/practice-management/ama-steps-forward-program
+  description: Open-access physician well-being and practice-improvement resources,
+    including tools for burnout, workflow, organizational well-being, and technology.
+  limitations: Resources vary in intended audience, evidence basis, and implementation
+    context.
+- id: peerrxmed
+  name: PeerRxMed
+  audience:
+  - physician
+  - resident
+  - fellow
+  type: digital-tool
+  topics:
+  - physician-wellbeing
+  - peer-support
+  - burnout
+  scope: national
+  region:
+  - US
+  cost: free
+  access:
+  - public-web
+  evidence_level: community-resource
+  evidence_basis: Peer-led program described by its organizers as a free buddy system
+    for physicians; covered by the AMA as a physician peer-support model.
+  privacy: Site states newsletter email addresses are never shared with others; the
+    buddy program itself pairs participants with a self-chosen partner and is not
+    presented as anonymous.
+  confidentiality: Not presented as confidential; peer-to-peer format.
+  clinical_use: false
+  emergency_resource: false
+  language_access: English (site content); other languages not documented.
+  last_reviewed: '2026-10-09'
+  review_status: verified-source-pending-entry-review
+  source_organization: PeerRxMed
+  official_url: https://www.peerrxmed.com/
+  description: Free peer-to-peer program pairing physicians and other health care
+    workers in a buddy system (PRx90) with weekly check-in prompts to support connection
+    and well-being.
+  limitations: Peer support, not clinical care. Participants choose their own buddy;
+    no professional matching, crisis response, or published outcome data.
+- id: mayo-clinic-well-being-index
+  name: Mayo Clinic Well-Being Index
+  audience:
+  - physician
+  - resident
+  - fellow
+  - medical-student
+  type: digital-tool
+  topics:
+  - burnout
+  - physician-wellbeing
+  - measurement
+  - professional-fulfillment
+  scope: international
+  region:
+  - global
+  cost: varies
+  access:
+  - institution-required
+  evidence_level: controlled-study
+  evidence_basis: Mayo Clinic describes the Well-Being Index as a validated 9-question
+    instrument with 10+ years of validation research; exclusively licensed to MedEd
+    Web Solutions.
+  privacy: Vendor states the tool is 100% anonymous by architecture with an anonymity
+    threshold, and individual results are never seen by leadership or HR.
+  confidentiality: Individual results private; organizations receive aggregate reports
+    only.
+  clinical_use: false
+  emergency_resource: false
+  language_access: Verify.
+  last_reviewed: '2026-10-09'
+  review_status: verified-source-pending-entry-review
+  source_organization: Mayo Clinic (licensed to MedEd Web Solutions)
+  official_url: https://www.mywellbeingindex.org
+  description: Online and mobile self-assessment measuring six dimensions of distress
+    and well-being in nine questions, with role-specific versions for physicians,
+    residents, fellows, and medical students.
+  limitations: 'Organizational product: individual access requires a participating
+    employer or institution. Pricing via vendor contact; verify current terms before
+    publication.'
+- id: therapy-aid-coalition
+  name: Therapy Aid Coalition
+  audience:
+  - physician
+  - resident
+  - fellow
+  - medical-student
+  type: digital-tool
+  topics:
+  - mental-health
+  - counseling
+  - physician-wellbeing
+  - help-seeking
+  scope: national
+  region:
+  - US
+  cost: varies
+  access:
+  - public-web
+  evidence_level: community-resource
+  evidence_basis: 501(c)(3) nonprofit network (EIN 85-0791885, Therapy Aid Coalition
+    Inc, confirmed via ProPublica Nonprofit Explorer sourced to the IRS Exempt Organizations
+    Business Master File extract, checked 2026-10-10); program pages describe pro-bono
+    or reduced-fee therapy matching for health care workers.
+  privacy: Platform-level privacy terms not documented in sources checked.
+  confidentiality: Therapy occurred under the therapist-client relationship while
+    active; platform-level confidentiality terms not documented in sources checked.
+  clinical_use: true
+  emergency_resource: false
+  language_access: English (site content); other languages not documented.
+  last_reviewed: '2026-10-10'
+  review_status: verified-entry
+  source_organization: Therapy Aid Coalition
+  official_url: https://www.therapyaid.org/
+  description: 'Former nonprofit network that connected US health care professionals
+    and first responders with licensed therapists for pro-bono or reduced-fee therapy.
+    The program has closed: the official site now carries a sunset announcement (''Therapy
+    Aid is Sunsetting... We have closed our doors'', verified 2026-10-10) and directs
+    visitors to other organizations'' resource pages.'
+  limitations: 'SUNSET/DISCONTINUED: therapy matching is no longer operating (official
+    homepage sunset announcement re-confirmed live 2026-10-10: ''Therapy Aid is Sunsetting...
+    We have closed our doors''). The homepage directs visitors to other organizations''
+    resource pages, which are the actionable referral for anyone reaching this listing.
+    Kept as a verified entry so the directory states the closure plainly instead of
+    showing a dead listing; not an active service. A stale volunteer-signup page was
+    previously observed at the old /register path.'
+- id: vital-worklife
+  name: VITAL WorkLife
+  audience:
+  - physician
+  - resident
+  - fellow
+  type: digital-tool
+  topics:
+  - physician-wellbeing
+  - burnout
+  - counseling
+  - peer-support
+  scope: national
+  region:
+  - US
+  cost: free
+  access:
+  - membership-required
+  evidence_level: institutional-resource
+  evidence_basis: Healthcare-focused employee assistance program; official materials
+    describe the app, assessments, and counseling services.
+  privacy: Vendor states app and assessment information is strictly confidential,
+    HIPAA-compliant, and never shared; employer does not know who uses the resources.
+  confidentiality: EAP use described as confidential, with standard legal exceptions
+    such as safety risk.
+  clinical_use: true
+  emergency_resource: false
+  language_access: Verify.
+  last_reviewed: '2026-10-09'
+  review_status: verified-source-pending-entry-review
+  source_organization: VITAL WorkLife, Inc.
+  official_url: https://www.vitalworklife.com/
+  description: Healthcare-focused employee assistance program with a mobile app and
+    digital platform offering well-being assessments, counseling access (phone, video,
+    in-person), peer coaching, and 24/7 support.
+  limitations: Available only through participating employers; free to members (employer-paid).
+    Verify current app and program details before publication.
