@@ -293,13 +293,13 @@ resources:
     confidentiality: "Not applicable to informational browsing."
     clinical_use: false
     emergency_resource: false
-    language_access: "Verify."
-    last_reviewed: "2026-10-07"
-    review_status: verified-source-pending-entry-review
+    language_access: "Not documented; official resources published in English."
+    last_reviewed: "2026-10-12"
+    review_status: verified-entry
     source_organization: "American Medical Association"
     official_url: "https://www.ama-assn.org/practice-management/ama-steps-forward-program"
     description: "Open-access physician well-being and practice-improvement resources, including tools for burnout, workflow, organizational well-being, and technology."
-    limitations: "Resources vary in intended audience, evidence basis, and implementation context."
+    limitations: "Resources vary in intended audience, evidence basis, and implementation context. AMA describes the program as open access and free to all, including non-members; claiming CME credit for some modules may carry a fee for non-members. Module content is copyrighted by the American Medical Association; reuse terms not stated."
 
   - id: peerrxmed
     name: "PeerRxMed"
