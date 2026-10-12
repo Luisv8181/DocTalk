@@ -382,13 +382,13 @@ resources:
     evidence_level: institutional-resource
     evidence_basis: "Healthcare-focused employee assistance program; official materials describe the app, assessments, and counseling services."
     privacy: "Vendor states app and assessment information is strictly confidential, HIPAA-compliant, and never shared; employer does not know who uses the resources."
-    confidentiality: "EAP use described as confidential, with standard legal exceptions such as safety risk."
+    confidentiality: "Vendor describes EAP use as confidential: the official EAP FAQ states 'your employer doesn't know who, when or why anyone uses the resources'; exceptions not documented in sources checked."
     clinical_use: true
     emergency_resource: false
-    language_access: "Verify."
-    last_reviewed: "2026-10-09"
-    review_status: verified-source-pending-entry-review
+    language_access: "Not documented; published in English."
+    last_reviewed: "2026-10-12"
+    review_status: verified-entry
     source_organization: "VITAL WorkLife, Inc."
     official_url: "https://www.vitalworklife.com/"
     description: "Healthcare-focused employee assistance program with a mobile app and digital platform offering well-being assessments, counseling access (phone, video, in-person), peer coaching, and 24/7 support."
-    limitations: "Available only through participating employers; free to members (employer-paid). Verify current app and program details before publication."
+    limitations: "Available only through participating employers; free to members (employer-paid)."
