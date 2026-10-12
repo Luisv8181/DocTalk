@@ -211,26 +211,26 @@ resources:
 
   - id: stanford-professional-fulfillment-index
     name: "Stanford Professional Fulfillment Index"
-    audience: [physician, resident, fellow, educator, institution, researcher]
+    audience: [physician, resident, fellow, institution, researcher]
     type: assessment
     topics: [burnout, professional-fulfillment, measurement, research]
-    scope: international
-    region: [global]
-    cost: free
+    scope: unknown
+    region: unknown
+    cost: unknown
     access: [public-web]
-    evidence_level: controlled-study
-    evidence_basis: "Stanford describes the PFI as a validated instrument used to assess burnout and professional fulfillment."
-    privacy: "Local administration determines data handling."
-    confidentiality: "Depends on administration context."
+    evidence_level: observational-research
+    evidence_basis: "Stanford lists the 2018 Trockel et al. validation study (reliability and validity of the PFI in a sample of resident and practicing physicians, Acad Psychiatry 42:11-24) and states the National Academy of Medicine recognizes the PFI as one of the few validated and reliable survey instruments for measuring well-being and burnout."
+    privacy: "Data-handling terms not documented in the official source checked."
+    confidentiality: "Confidentiality terms not documented in the official source checked; confirm with the permission agreement before administering."
     clinical_use: false
     emergency_resource: false
-    language_access: "Verify."
-    last_reviewed: "2026-10-07"
-    review_status: verified-source-pending-entry-review
+    language_access: "Not documented in the official source checked."
+    last_reviewed: "2026-10-11"
+    review_status: verified-entry
     source_organization: "Stanford Medicine WellMD & WellPhD"
     official_url: "https://wellmd.stanford.edu/wellbeing-toolkit/professional-fulfillment-index.html"
-    description: "Validated survey instrument for physician well-being measurement, covering burnout and professional fulfillment."
-    limitations: "Permission requirements can differ based on whether the instrument is modified and how it is administered."
+    description: "Validated survey instrument developed by Stanford Medicine WellMD & WellPhD to measure burnout and professional fulfillment in physicians and scientists. Integrated into the Stanford Doctor Survey and Stanford Scientist Survey; also used by the Healthcare Professional Well-Being Academic Consortium (PWAC). Obtaining the instrument requires submitting a permission inquiry to Stanford."
+    limitations: "Non-profit organizations may self-administer the PFI without modification for research or program evaluation; modified use requires prior written permission from the Stanford WellMD & WellPhD Center (inquiry form on the official page). The official page publishes no cost, language-access, regional-scope, or data-handling terms."
 
   - id: joint-commission-worker-wellbeing-resource-center
     name: "Joint Commission Workforce Safety & Well-Being Resource Center"
