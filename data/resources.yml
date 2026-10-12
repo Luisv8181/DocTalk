@@ -311,14 +311,14 @@ resources:
     cost: free
     access: [public-web]
     evidence_level: community-resource
-    evidence_basis: "Peer-led program described by its organizers as a free buddy system for physicians; covered by the AMA as a physician peer-support model."
+    evidence_basis: "15-point checklist verification completed against peerrxmed.com (homepage, /process, /purpose, blog) and AMA coverage on 2026-10-12. Peer-led program described by its organizers as a free buddy system for physicians; covered by the AMA as a physician peer-support model. Evidence level describes the resource as a peer/community offering, not clinical efficacy."
     privacy: "Site states newsletter email addresses are never shared with others; the buddy program itself pairs participants with a self-chosen partner and is not presented as anonymous."
     confidentiality: "Not presented as confidential; peer-to-peer format."
     clinical_use: false
     emergency_resource: false
     language_access: "English (site content); other languages not documented."
-    last_reviewed: "2026-10-09"
-    review_status: verified-source-pending-entry-review
+    last_reviewed: "2026-10-12"
+    review_status: verified-entry
     source_organization: "PeerRxMed"
     official_url: "https://www.peerrxmed.com/"
     description: "Free peer-to-peer program pairing physicians and other health care workers in a buddy system (PRx90) with weekly check-in prompts to support connection and well-being."
