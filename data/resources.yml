@@ -363,12 +363,12 @@ resources:
     clinical_use: true
     emergency_resource: false
     language_access: "English (site content); other languages not documented."
-    last_reviewed: "2026-10-10"
+    last_reviewed: "2026-10-13"
     review_status: verified-entry
     source_organization: "Therapy Aid Coalition"
     official_url: "https://www.therapyaid.org/"
-    description: "Former nonprofit network that connected US health care professionals and first responders with licensed therapists for pro-bono or reduced-fee therapy. The program has closed: the official site now carries a sunset announcement ('Therapy Aid is Sunsetting... We have closed our doors', verified 2026-10-10) and directs visitors to other organizations' resource pages."
-    limitations: "SUNSET/DISCONTINUED: therapy matching is no longer operating (official homepage sunset announcement re-confirmed live 2026-10-10: 'Therapy Aid is Sunsetting... We have closed our doors'). The homepage directs visitors to other organizations' resource pages, which are the actionable referral for anyone reaching this listing. Kept as a verified entry so the directory states the closure plainly instead of showing a dead listing; not an active service. A stale volunteer-signup page was previously observed at the old /register path."
+    description: "Former nonprofit network that connected US health care professionals and first responders with licensed therapists for pro-bono or reduced-fee therapy. The program has closed: the official site now carries a sunset announcement ('Therapy Aid is Sunsetting... We have closed our doors', verified 2026-10-13) and directs visitors to other organizations' resource pages."
+    limitations: "SUNSET/DISCONTINUED: therapy matching is no longer operating (official homepage sunset announcement re-confirmed live 2026-10-13: 'Therapy Aid is Sunsetting... We have closed our doors'). The homepage directs visitors to other organizations' resource pages, which are the actionable referral for anyone reaching this listing. Kept as a verified entry so the directory states the closure plainly instead of showing a dead listing; not an active service. A stale volunteer-signup page was previously observed at the old /register path."
 
   - id: vital-worklife
     name: "VITAL WorkLife"
