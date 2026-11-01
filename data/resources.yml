@@ -26,6 +26,10 @@ resources:
     description: "National crisis-support entry point for people experiencing suicidal, mental-health, or substance-use crisis. Available 24/7/365: call or text 988, web chat (chat.988lifeline.org), or ASL videophone."
     limitations: "Not a medical provider or a substitute for emergency medical services or ongoing clinical care; call 911 first for an immediate physical safety threat. SAMHSA and the network administrator charge no fee, but carrier phone-plan charges, emergency-dispatch costs, and outside-referral costs may apply."
 
+  # REVIEW NOTE 2026-11-01 (link-rot sweep): official FAQ now states psychiatrists on call
+  # 8am-1am ET, 7 days a week, replacing the record's Mon-Fri 8am-11pm ET hours; description
+  # and limitations corrected to the FAQ wording in this commit. Full 15-point re-verification
+  # still owed, so this entry is flagged pending_verification until that run completes.
   - id: physician-support-line
     name: "Physician Support Line"
     audience: [medical-student, resident, physician]
@@ -43,11 +47,11 @@ resources:
     emergency_resource: false
     language_access: "Not documented on the official site; marked unknown (2026-10-10)."
     last_reviewed: "2026-10-10"
-    review_status: verified-entry
+    review_status: pending_verification
     source_organization: "Physician Support Line"
     official_url: "https://www.physiciansupportline.com/"
-    description: "National peer-support line for U.S. physicians and medical students, staffed by hundreds of volunteer psychiatrists. Call 1-888-409-0141; no appointment necessary. Open Monday to Friday, 8:00 AM-11:00 PM ET, except federal holidays. Calls are free, confidential, and anonymous. For any issue, not just a crisis; peer support, not clinical treatment."
-    limitations: "Not a crisis hotline and not a medical provider; peer support, not clinical treatment. Hours limited to weekdays (ET); phone only. Eligibility limited to U.S. physicians and medical students."
+    description: "National peer-support line for U.S. physicians and medical students, staffed by hundreds of volunteer psychiatrists. Call 1-888-409-0141; no appointment necessary. Open 8:00 AM-1:00 AM ET, 7 days a week (official FAQ, checked 2026-11-01). Calls are free, confidential, and anonymous. For any issue, not just a crisis; peer support, not clinical treatment."
+    limitations: "Not a crisis hotline and not a medical provider; peer support, not clinical treatment. Phone only. Eligibility limited to U.S. physicians and medical students."
 
   - id: federation-state-physician-health-programs
     name: "Federation of State Physician Health Programs"
