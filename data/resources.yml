@@ -26,13 +26,9 @@ resources:
     description: "National crisis-support entry point for people experiencing suicidal, mental-health, or substance-use crisis. Available 24/7/365: call or text 988, web chat (chat.988lifeline.org), or ASL videophone."
     limitations: "Not a medical provider or a substitute for emergency medical services or ongoing clinical care; call 911 first for an immediate physical safety threat. SAMHSA and the network administrator charge no fee, but carrier phone-plan charges, emergency-dispatch costs, and outside-referral costs may apply."
 
-  # REVIEW NOTE 2026-11-01 (link-rot sweep): official FAQ now states psychiatrists on call
-  # 8am-1am ET, 7 days a week, replacing the record's Mon-Fri 8am-11pm ET hours; description
-  # and limitations corrected to the FAQ wording in this commit. Full 15-point re-verification
-  # still owed, so this entry is flagged pending_verification until that run completes.
   - id: physician-support-line
     name: "Physician Support Line"
-    audience: [medical-student, resident, physician]
+    audience: [medical-student, resident, fellow, physician]
     type: peer-support
     topics: [physician-wellbeing, peer-support, stress, anxiety, depression]
     scope: national
@@ -40,18 +36,18 @@ resources:
     cost: free
     access: [phone]
     evidence_level: community-resource
-    evidence_basis: "No published outcome evaluation of this specific line was located. Peer-support program operated by a nonprofit and staffed by volunteer psychiatrists; news coverage documents operation since March 2020. 15-point checklist verification completed against physiciansupportline.com on 2026-10-10. Evidence level describes the service as a resource, not clinical efficacy."
-    privacy: "Homepage describes the line as 'Confidential & Anonymous' and states 'We report to no one' (2026-10-10). No separate written privacy policy was located on the official site."
-    confidentiality: "Homepage states the line is 'Free, Confidential & Anonymous' and 'We report to no one' (2026-10-10); calls are answered by volunteer psychiatrists, no appointment necessary."
+    evidence_basis: "No published outcome evaluation of this specific line was located. Peer-support program operated by a nonprofit and staffed by over 800 volunteer psychiatrists (official FAQ); news coverage documents operation since March 2020. 15-point checklist verification completed against physiciansupportline.com homepage and FAQ on 2026-11-01. Evidence level describes the service as a resource, not clinical efficacy."
+    privacy: "FAQ states calls are confidential: no identifying information is recorded, no phone numbers are stored, and volunteers have signed a confidentiality contract, with discussion with the admin team only if there is a concern about imminent harm to self or others (2026-11-01). Homepage states 'Free, Confidential & Anonymous' and 'We report to no one'. No separate written privacy policy was located on the official site."
+    confidentiality: "Homepage states the line is 'Free, Confidential & Anonymous' and 'We report to no one'; FAQ adds no identifying information recorded, no phone numbers stored, and an imminent-harm exception for discussion with the admin team (2026-11-01). Calls are answered by volunteer psychiatrists, no appointment necessary, and no doctor-patient relationship is established, so calls are not reportable to a medical board as therapy services."
     clinical_use: false
     emergency_resource: false
-    language_access: "Not documented on the official site; marked unknown (2026-10-10)."
-    last_reviewed: "2026-10-10"
-    review_status: pending_verification
+    language_access: "Not documented on the official site; marked unknown (2026-11-01)."
+    last_reviewed: "2026-11-01"
+    review_status: verified-entry
     source_organization: "Physician Support Line"
     official_url: "https://www.physiciansupportline.com/"
-    description: "National peer-support line for U.S. physicians and medical students, staffed by hundreds of volunteer psychiatrists. Call 1-888-409-0141; no appointment necessary. Open 8:00 AM-1:00 AM ET, 7 days a week (official FAQ, checked 2026-11-01). Calls are free, confidential, and anonymous. For any issue, not just a crisis; peer support, not clinical treatment."
-    limitations: "Not a crisis hotline and not a medical provider; peer support, not clinical treatment. Phone only. Eligibility limited to U.S. physicians and medical students."
+    description: "National peer-support line for U.S. physicians, trainees, and medical students, staffed by over 800 volunteer psychiatrists (official FAQ). Call 1-888-409-0141; no appointment necessary. Open 8:00 AM-1:00 AM ET, 7 days a week (official FAQ, checked 2026-11-01). Calls are free, confidential, and anonymous. For any issue, not just a crisis; peer support, not clinical treatment."
+    limitations: "Not a crisis hotline and not a medical provider; peer support, not clinical treatment; no ongoing doctor-patient relationship and no prescribing. Phone only. Eligibility limited to U.S. physicians, trainees, and medical students; family members and friends of physicians may also call per the FAQ."
 
   - id: federation-state-physician-health-programs
     name: "Federation of State Physician Health Programs"
